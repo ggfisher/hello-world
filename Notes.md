@@ -2,7 +2,7 @@
 
 Here's some words about the book _One Hundred Years..._.
 
-These are class notes
+#These are class notes
 
 ###bigcup
 
