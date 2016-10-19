@@ -207,7 +207,7 @@ SELECT S.sname
 FROM Sailors S, Reserves R  
 WHERE S.sid = R.sid AND R.bid = 103  
 
-The first step is to construct the cross-priduct of our two instances:  
+The first step is to construct the cross-product of our two instances:  
 
 |sid|sname|rating|age|sid|bid|day|
 |---|---|---|---|---|---|---|
