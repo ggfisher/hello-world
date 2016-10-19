@@ -147,14 +147,14 @@ In this example, empoyeeID is the only candidate key
 
 What are all the superkey's?
 
-*employeeID
-*employeeID + salary
-*employeeID + employeename
-*employeeID + salary + employeename
+employeeID
+employeeID + salary
+employeeID + employeename
+employeeID + salary + employeename
 
 As stated, the minimal superkey is the candidate key.  Therefore, the candidate key in this case is empoyeeID.
 
-** Note - Note that every relation is guaranteed to have a key. Since a relation is a set of tuples, the set of all fields is always a superkey.**
+Note that every relation is guaranteed to have a key. Since a relation is a set of tuples, the set of all fields is always a superkey.
 
 ***primary key***
 
