@@ -174,7 +174,7 @@ Out of all the available candidate keys, a database designer can identify a prim
 ## Chapter 5
 ### SQL Topics
 
-__I will use bold italics for primary keys in this section - I don't thing Markdown supports underlines.  If someone knows how to do it please add this feature to the primary keys.__
+__I will use bold italics for primary keys in this section - I don't think Markdown supports underlines.  If someone knows how to do it please add this feature to the primary keys.__
 
 Consider the following schema:  
 
