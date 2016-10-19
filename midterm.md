@@ -84,3 +84,12 @@ The relation cardinality is the number of tuples in the relation.
 ***relation degree***
 
 The relation degree is the number of fields (or columns) in the relation.
+
+***integrity constraint***
+
+A condition specified on a database schema and restricts the data that can be stored in an instance of the database. If a database instance satisfies all the integrity constraints specified on the database schema, it is a legal instance. A DBMS enforces integrity constraints, in that it permits only legal instances to be stored in the database.
+
+***domain constraint***
+
+Domain constraints in the schema specify an important condition that we want each instance of the relation to satisfy: The values that appear in a column must be drawn from the domain associated with that column. Thus, the domain of a field is essentially the type of that field, in programming language terms, and restricts the values that can appear in the field.
+
