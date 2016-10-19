@@ -171,4 +171,13 @@ So in this relation, employeeID is a candidate key.  Also, no values in the empl
 
 Out of all the available candidate keys, a database designer can identify a primary key.
 
-## SQL Topics
+## Chapter 5
+### SQL Topics
+
+The following example SQL queries use the following table definitions.
+
+Sailors(_sid_: integer, sname: string, rating: integer, age: real) 
+Boats(_bid_: integer, bname: string, color: string) 
+Reserves(_sid_: integer, _bid_: integer, _day_: date)
+
+
