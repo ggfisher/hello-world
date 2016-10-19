@@ -1,6 +1,6 @@
 ## Important Terms
 
-*relation schema*
+***relation schema***
 
 A relation schema can be thought of as the basic information describing
 a table or relation. This includes a set of column names, the data types associated
@@ -13,7 +13,7 @@ representation:
 Students(sid: **string**, name: **string**, login: **string**,
 age: **integer**, gpa: **real**)
 
-*relational database schema*
+***relational database schema***
 
 A relational database schema is a collection of relation schemas, describing one or more
 relations.
@@ -23,15 +23,15 @@ relations.
 Domain is synonymous with data type. Attributes can be thought of as columns in a
 table. Therefore, an attribute domain refers to the data type associated with a column.
 
-*relation instance*
+***relation instance***
 
 A relation instance is a set of tuples (also known as rows or records) that each conform
 to the schema of the relation.
 
-*relation cardinality*
+***relation cardinality***
 
 The relation cardinality is the number of tuples in the relation.
 
-*relation degree*
+***relation degree***
 
 The relation degree is the number of fields (or columns) in the relation.
