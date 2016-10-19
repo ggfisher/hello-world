@@ -182,8 +182,9 @@ Reserves(__sid__: integer, __bid__: integer, __day__: date)
 
 Example instances of the previous tables.  
 
-An Instance of Sailors  
-|sid|sname|rating|age|
+An Instance of Sailors:  
+
+|sid|sname|rating|age|              |sid|sname|rating|age|
 |---|---|---|---|
 |22| Dustin| 7| 45.0 |
 |29| Brutus| 1| 33.0|
@@ -195,3 +196,5 @@ An Instance of Sailors
 |74 |Horatio| 9| 35.0 |
 |85 |Art| 3| 25.5| 
 |95 |Bob |3 |63.5|
+
+
