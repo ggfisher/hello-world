@@ -198,11 +198,9 @@ An Instance of Sailors:
 |95 |Bob |3 |63.5|
 
 An Instance of Reserves:  
-|sid|sname|rating|age|
-|---|---|---|---|
-|22| Dustin| 7| 45.0 |
-|29| Brutus| 1| 33.0|
-|31 |Lubber| 8| 55.5|
-|32 |Andy |8 |25.5|
 
-
+|sid|bid|day|
+|---|---|---|
+|22| Dustin| 7|
+|29| Brutus| 1|
+|31 |Lubber| 8|
