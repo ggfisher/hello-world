@@ -112,11 +112,12 @@ a candidate key, {eid,name} could not be a candidate key because {eid} is a subs
 
 Example:
 
-eid	eage	ename
-1	20	lisa
-2	20	lisa
-3	30	andy
-2	30	andy
+|eid|eage|ename|
+|--|--|--|
+|1|	20|	lisa|
+|2	|20	|lisa|
+|3	|30	|andy|
+|2	|30	|andy|
 
 eid does not uniquely identify a tupel
 
