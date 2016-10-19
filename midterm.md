@@ -93,3 +93,82 @@ A condition specified on a database schema and restricts the data that can be st
 
 Domain constraints in the schema specify an important condition that we want each instance of the relation to satisfy: The values that appear in a column must be drawn from the domain associated with that column. Thus, the domain of a field is essentially the type of that field, in programming language terms, and restricts the values that can appear in the field.
 
+***Key constraint***
+
+A key constraint is a statement that a certain minimal subset of the fields of a relation is a unique identifier for a tuple.
+A set of fields that uniquely identifies a tuple according to a key constraint is called a candidate key for the relation.
+
+
+***definition of a (candidate) key***
+
+
+1. Two distinct tuples in a legal instance (a legal instance is an instance that satisfies all Integrity Constraints,
+including the key constraint) cannot have identical values in all the fields of a key.  This means that a candidate key 
+is the minimum set of attributes used to uniquely identify a tupel or record in a table.
+
+2. No subset of the set of fields in a key is a unique identifier for a tuple.  This means that if for example, {eid} was
+a candidate key, {eid,name} could not be a candidate key because {eid} is a subset of {eid,name}.
+
+
+Example:
+
+eid	eage	ename
+1	20	lisa
+2	20	lisa
+3	30	andy
+2	30	andy
+
+eid does not uniquely identify a tupel
+
+however, the combination of eid,eage uniquely define each tuple so {eid,eage} is a candidate key.
+
+Example:
+
+eid	eage	ename
+1	20	tony
+2	20	lisa
+3	30	andy
+2	30	bill
+
+here, the combination of {eid,eage} and {eid,ename} are both candidate keys.
+
+
+superkey
+
+a candidate key plus zero or more attributes. 
+therefore - every candidate key is a superkey however the reverse is not true - every superkey cannot be a candidate key
+the minimal superkey is the candidate key
+
+employeeID	salary	employeename
+1		22,000	ernie
+2		40,000	alice
+3		22,000	bart
+4		45,000	ernie
+
+therefore - empoyeeID is the only candidate key
+
+what are all the superkey's
+
+employeeID
+employeeID + salary
+employeeID + employeename
+employeeID + salary + employeename
+
+
+as stated, the minimal superkey is the candidate key.  Therefore, the candidate key in this case is empoyeeID.
+
+** Note - Note that every relation is guaranteed to have a key. Since a relation is a set of tuples, 
+the set of all fields is always a superkey.
+
+primary key - is a candidate keys which has no NULL values
+
+employeeID	salary	employeename
+1		22,000	ernie
+2		40,000	alice
+3		22,000	bart
+4		45,000	NULL
+
+so, employeeID is a candidate key.  Also, no values in the employeeID are null, so employeeID is also the primary key
+ALthough employeename is a candidate key, it contains NULL values so it cannot be a primary key.
+
+Out of all the available candidate keys, a database designer can identify a primary key.
