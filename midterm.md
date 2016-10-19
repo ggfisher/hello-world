@@ -174,7 +174,7 @@ Out of all the available candidate keys, a database designer can identify a prim
 ## Chapter 5
 ### SQL Topics
 
-The following example SQL queries use the following table definitions.
+Consider the following schema:  
 
 Sailors(__sid__: integer, sname: string, rating: integer, age: real)   
 Boats(__bid__: integer, bname: string, color: string)   
@@ -222,9 +222,11 @@ The second step is to apply the qualification __S.sid__ __=__ __R.sid__ AND __R.
 |---|
 |Rusty |
 
-Suppliers(sid: integer, sname: string, address: string)   
-Parts(pid: integer, pname: string, color: string)   
-Catalog(sid: integer, pid: integer, cost: real)  
+Consider the following schema:  
+
+Suppliers(__*sid*__: __integer__, sname: string, address: string)   
+Parts(__*pid*__: __integer__, pname: string, color: string)   
+Catalog(__*sid: __integer__, __*pid*__: __integer__, cost: real)  
 
 
 
