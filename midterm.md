@@ -224,7 +224,7 @@ The second step is to apply the qualification __S.sid__ __=__ __R.sid__ AND __R.
 
 Consider the following schema:  
 
-Suppliers(__*sid*__: __integer__, sname: string, address: string)   
+Suppliers(_*sid*_: __integer__, sname: string, address: string)   
 Parts(__*pid*__: __integer__, pname: string, color: string)   
 Catalog(__*sid: __integer__, __*pid*__: __integer__, cost: real)  
 
