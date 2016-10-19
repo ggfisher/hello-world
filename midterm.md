@@ -1,6 +1,6 @@
-### Important Terms
+## Important Terms
 
-##Chapter 2
+###Chapter 2
 
 ***Attribute*** - a property or description of an entity. A toy department employee
 entity could have attributes describing the employee’s name, salary, and years of
@@ -47,7 +47,7 @@ including Dependent information for employees for insurance purposes.
 set to participate in another relationship set. This is indicated on an ER diagram
 by drawing a dashed box around the aggregation.
 
-##Chapter 3
+###Chapter 3
 
 ***relation schema***
 
