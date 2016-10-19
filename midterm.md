@@ -207,3 +207,12 @@ WHERE S.sid = R.sid AND R.bid = 103
 
 The first step is to construct the cross-priduct of our two instances:  
 
+|sid|sname|rating|age|sid|bid|day|
+|---|---|---|---|---|---|---|
+|22| Dustin| 7| 45.0 |22|101|10/10/96|
+|22| Dustin| 7| 45.0 |58|103|11/12/96|
+|31 |Lubber| 8| 55.5|22|101|10/10/96|
+|31 |Lubber| 8| 55.5|58|103|11/12/96|
+|58 |Rusty |10 |35.0|22|101|10/10/96|
+|58 |Rusty |10 |35.0|58|103|11/12/96|
+
