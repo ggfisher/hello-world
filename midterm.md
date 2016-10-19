@@ -220,3 +220,10 @@ An Instance of Boats:
 |102|Interlake|red|
 |103|Clipper|green|
 |104|Marine|red|
+
+
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
