@@ -147,10 +147,10 @@ In this example, empoyeeID is the only candidate key
 
 What are all the superkey's?
 
-employeeID
-employeeID + salary
-employeeID + employeename
-employeeID + salary + employeename
+- employeeID
+- employeeID + salary
+- employeeID + employeename
+- employeeID + salary + employeename
 
 As stated, the minimal superkey is the candidate key.  Therefore, the candidate key in this case is empoyeeID.
 
