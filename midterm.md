@@ -216,3 +216,11 @@ The first step is to construct the cross-priduct of our two instances:
 |58 |Rusty |10 |35.0|22|101|10/10/96|
 |58 |Rusty |10 |35.0|58|103|11/12/96|
 
+The second step is to apply the qualification __S.sid__ __=__ __R.sid__ AND __R.bid__ __=__ __103__.  This step eliminates all but the last row from the instance shown above.  The last step is to eliminate unwanted columns - since only _sname_ is in the SELECT clause, we return the following:  
+
+|sname|
+|Rusty |
+
+
+
+
