@@ -222,6 +222,8 @@ The second step is to apply the qualification __S.sid__ __=__ __R.sid__ AND __R.
 |---|
 |Rusty |
 
-
+Suppliers(___sid___: __integer__, _sname_: string, _address_: string) 
+Parts(___pid___: __integer__, _pname_: string, _color_: string) 
+Catalog(___sid: integer, pid: integer___, _cost_: real)
 
 
