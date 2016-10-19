@@ -12,3 +12,8 @@ representation:
 
 Students(sid: **string**, name: **string**, login: **string**,
 age: **integer**, gpa: **real**)
+
+*relational database schema*
+
+A relational database schema is a collection of relation schemas, describing one or more
+relations.
