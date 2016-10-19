@@ -211,3 +211,12 @@ An Instance of Reserves:
 |64|101|9/5/98|
 |64|102|9/8/98|
 |74|103|9/8/98|
+
+An Instance of Boats:  
+
+|bid|bname|color|
+|---|---|---|
+|101|Interlake|blue|
+|102|Interlake|red|
+|103|Clipper|green|
+|104|Marine|red|
