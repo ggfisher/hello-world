@@ -196,3 +196,14 @@ An Instance of Reserves:
 |---|---|---|
 |22|101|10/10/96|
 |58|103|11/12/96|
+
+Question:  Find the names of sailors who have reserved boat number 103.
+
+This can be expressed in SQL as follows:  
+
+SELECT S.sname  
+FROM Sailors S, Reserves R  
+WHERE S.sid = R.sid AND R.bid = 103  
+
+The first step is to construct the cross-priduct of our two instances:  
+
