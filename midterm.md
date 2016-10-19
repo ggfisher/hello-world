@@ -228,5 +228,5 @@ Suppliers(_*sid*_: __integer__, sname: string, address: string)
 Parts(__*pid*__: __integer__, pname: string, color: string)   
 Catalog(__*sid: __integer__, __*pid*__: __integer__, cost: real)  
 
-
+__underline__
 
