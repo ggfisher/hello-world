@@ -2,7 +2,50 @@
 
 ##Chapter 2
 
+***Attribute*** - a property or description of an entity. A toy department employee
+entity could have attributes describing the employee’s name, salary, and years of
+service.
 
+***Domain*** - a set of possible values for an attribute.
+
+***Entity*** - an object in the real world that is distinguishable from other objects such
+as the green dragon toy.
+
+***Relationship*** - an association among two or more entities.
+
+***Entity set*** - a collection of similar entities such as all of the toys in the toy department.
+
+***Relationship set*** - a collection of similar relationships
+
+***One-to-many relationship*** - a key constraint that indicates that one entity can be
+associated with many of another entity. An example of a one-to-many relationship
+is when an employee can work for only one department, and a department can
+have many employees.
+
+***Many-to-many relationship*** - a key constraint that indicates that many of one
+entity can be associated with many of another entity. An example of a manyto-
+many relationship is employees and their hobbies: a person can have many
+different hobbies, and many people can have the same hobby.
+
+***Participation constraint*** - a participation constraint determines whether relationships
+must involve certain entities. An example is if every department entity has
+a manager entity. Participation constraints can either be total or partial. A total
+participation constraint says that every department has a manager. A partial
+participation constraint says that every employee does not have to be a manager.
+
+***Overlap constraint*** - within an ISA hierarchy, an overlap constraint determines
+whether or not two subclasses can contain the same entity.
+
+***Covering constraint*** - within an ISA hierarchy, a covering constraint determines
+where the entities in the subclasses collectively include all entities in the superclass.
+
+***Weak entity set*** - an entity that cannot be identified uniquely without considering
+some primary key attributes of another identifying owner entity. An example is
+including Dependent information for employees for insurance purposes.
+
+***Aggregation*** - a feature of the entity relationship model that allows a relationship
+set to participate in another relationship set. This is indicated on an ER diagram
+by drawing a dashed box around the aggregation.
 
 ##Chapter 3
 
