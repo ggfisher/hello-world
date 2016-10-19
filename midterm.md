@@ -176,14 +176,13 @@ Out of all the available candidate keys, a database designer can identify a prim
 
 The following example SQL queries use the following table definitions.
 
-Sailors(__sid__ integer, sname: string, rating: integer, age: real)   
-Boats(bid: integer, bname: string, color: string)   
-Reserves(sid: integer, bid: integer, day: date)  
+Sailors(__sid__: integer, sname: string, rating: integer, age: real)   
+Boats(__bid__: integer, bname: string, color: string)   
+Reserves(__sid__: integer, __bid__: integer, __day__: date)  
 
 Example instances of the previous tables.  
 
 An Instance of Sailors  
-
 |sid|sname|rating|age|
 |---|---|---|---|
 |22| Dustin| 7| 45.0 |
