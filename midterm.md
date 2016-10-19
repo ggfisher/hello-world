@@ -176,7 +176,7 @@ Out of all the available candidate keys, a database designer can identify a prim
 
 The following example SQL queries use the following table definitions.
 
-Sailors(sid: integer, sname: string, rating: integer, age: real)   
+Sailors(_sid_ integer, sname: string, rating: integer, age: real)   
 Boats(bid: integer, bname: string, color: string)   
 Reserves(sid: integer, bid: integer, day: date)  
 
