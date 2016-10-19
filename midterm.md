@@ -109,7 +109,6 @@ is the minimum set of attributes used to uniquely identify a tupel or record in 
 2. No subset of the set of fields in a key is a unique identifier for a tuple.  This means that if for example, {eid} was
 a candidate key, {eid,name} could not be a candidate key because {eid} is a subset of {eid,name}.
 
-
 Example:
 
 |eid|eage|ename|
@@ -119,57 +118,56 @@ Example:
 |3	|30	|andy|
 |2	|30	|andy|
 
-eid does not uniquely identify a tupel
-
-however, the combination of eid,eage uniquely define each tuple so {eid,eage} is a candidate key.
+Here, eid does not uniquely identify a tupel however, the combination of {eid,eage} does uniquely define each tuple so {eid,eage} is a candidate key.
 
 Example:
 
-eid	eage	ename
-1	20	tony
-2	20	lisa
-3	30	andy
-2	30	bill
+|eid|eage|ename|
+|---|---|---|
+|1|	20|	tony|
+|2	|20	|lisa|
+|3	|30	|andy|
+|2	|30	|bill|
 
-here, the combination of {eid,eage} and {eid,ename} are both candidate keys.
+Here, the combination of {eid,eage} and {eid,ename} are both candidate keys.
 
+***superkey***
 
-superkey
+A ***superkey*** is acandidate key plus zero or more attributes. Every candidate key is a superkey however the reverse is not true - every superkey cannot be a candidate key.  The minimal superkey is the candidate key.
 
-a candidate key plus zero or more attributes. 
-therefore - every candidate key is a superkey however the reverse is not true - every superkey cannot be a candidate key
-the minimal superkey is the candidate key
+Example:
 
-employeeID	salary	employeename
-1		22,000	ernie
-2		40,000	alice
-3		22,000	bart
-4		45,000	ernie
+|employeeID|salary|employeename|
+|---|---|---|
+|1|		22,000	|ernie|
+|2	|	40,000	|alice|
+|3	|	22,000	|bart|
+|4	|	45,000	|ernie|
 
-therefore - empoyeeID is the only candidate key
+In this example, empoyeeID is the only candidate key
 
-what are all the superkey's
+What are all the superkey's?
 
 employeeID
 employeeID + salary
 employeeID + employeename
 employeeID + salary + employeename
 
+As stated, the minimal superkey is the candidate key.  Therefore, the candidate key in this case is empoyeeID.
 
-as stated, the minimal superkey is the candidate key.  Therefore, the candidate key in this case is empoyeeID.
+** Note - Note that every relation is guaranteed to have a key. Since a relation is a set of tuples, the set of all fields is always a superkey.**
 
-** Note - Note that every relation is guaranteed to have a key. Since a relation is a set of tuples, 
-the set of all fields is always a superkey.
+***primary key***
 
-primary key - is a candidate keys which has no NULL values
+A ***primary key*** is a candidate keys which has no NULL values
 
-employeeID	salary	employeename
-1		22,000	ernie
-2		40,000	alice
-3		22,000	bart
-4		45,000	NULL
+|employeeID	|salary|	employeename|
+|---|---|---|
+|1	|	22,000	|ernie|
+|2	|	40,000	|alice|
+|3	|	22,000	|bart|
+|4	|	45,000	|NULL|
 
-so, employeeID is a candidate key.  Also, no values in the employeeID are null, so employeeID is also the primary key
-ALthough employeename is a candidate key, it contains NULL values so it cannot be a primary key.
+So in this relation, employeeID is a candidate key.  Also, no values in the employeeID are null, so employeeID is also the primary key.  Although employeename is a candidate key, it contains NULL values so it cannot be a primary key.
 
 Out of all the available candidate keys, a database designer can identify a primary key.
