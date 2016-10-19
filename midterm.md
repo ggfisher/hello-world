@@ -101,7 +101,6 @@ A set of fields that uniquely identifies a tuple according to a key constraint i
 
 ***definition of a (candidate) key***
 
-
 1. Two distinct tuples in a legal instance (a legal instance is an instance that satisfies all Integrity Constraints,
 including the key constraint) cannot have identical values in all the fields of a key.  This means that a candidate key 
 is the minimum set of attributes used to uniquely identify a tupel or record in a table.
@@ -148,10 +147,10 @@ In this example, empoyeeID is the only candidate key
 
 What are all the superkey's?
 
-employeeID
-employeeID + salary
-employeeID + employeename
-employeeID + salary + employeename
+*employeeID
+*employeeID + salary
+*employeeID + employeename
+*employeeID + salary + employeename
 
 As stated, the minimal superkey is the candidate key.  Therefore, the candidate key in this case is empoyeeID.
 
