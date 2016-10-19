@@ -176,9 +176,9 @@ Out of all the available candidate keys, a database designer can identify a prim
 
 Consider the following schema:  
 
-Sailors(__sid__: integer, sname: string, rating: integer, age: real)   
-Boats(__bid__: integer, bname: string, color: string)   
-Reserves(__sid__: integer, __bid__: integer, __day__: date)  
+Sailors(__*sid*__: integer, sname: string, rating: integer, age: real)   
+Boats(__*bid*__: integer, bname: string, color: string)   
+Reserves(__*sid*__: integer, __*bid*__: integer, __*day*__: date)  
 
 Example instances of the previous tables.  
 
@@ -224,6 +224,6 @@ The second step is to apply the qualification __S.sid__ __=__ __R.sid__ AND __R.
 
 Consider the following schema:  
 
-Suppliers(__sid__: integer, sname: string, address: string)   
-Parts(__pid__: integer, pname: string, color: string)   
-Catalog(__sid: integer, pid: integer__, cost: real)  
+Suppliers(__*sid*__: integer, sname: string, address: string)   
+Parts(__*pid*__: integer, pname: string, color: string)   
+Catalog(__*sid: integer, pid: integer*__, cost: real)  
