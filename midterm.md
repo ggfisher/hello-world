@@ -170,3 +170,5 @@ A ***primary key*** is a candidate keys which has no NULL values
 So in this relation, employeeID is a candidate key.  Also, no values in the employeeID are null, so employeeID is also the primary key.  Although employeename is a candidate key, it contains NULL values so it cannot be a primary key.
 
 Out of all the available candidate keys, a database designer can identify a primary key.
+
+## SQL Topics
