@@ -182,10 +182,10 @@ Reserves(sid: integer, bid: integer, day: date)
 
 Example instances of the previous tables.  
 
-An Instance of Sailors
+An Instance of Sailors  
+
 |sid|sname|rating|age|
 |---|---|---|---|
-
 |22| Dustin| 7| 45.0 |
 |29| Brutus| 1| 33.0|
 |31 |Lubber| 8| 55.5|
