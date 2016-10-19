@@ -1,5 +1,7 @@
 ## Important Terms
 
+*relation schema*
+
 A relation schema can be thought of as the basic information describing
 a table or relation. This includes a set of column names, the data types associated
 with each column, and the name associated with the entire table. For example, a
