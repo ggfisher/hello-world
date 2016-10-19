@@ -180,4 +180,4 @@ Sailors(sid: integer, sname: string, rating: integer, age: real)
 Boats(bid: integer, bname: string, color: string)   
 Reserves(sid: integer, bid: integer, day: date)  
 
-
+Example instances of the previous tables.  
