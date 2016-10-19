@@ -18,7 +18,7 @@ age: **integer**, gpa: **real**)
 A relational database schema is a collection of relation schemas, describing one or more
 relations.
 
-*Domain*
+***domain***
 
 Domain is synonymous with data type. Attributes can be thought of as columns in a
 table. Therefore, an attribute domain refers to the data type associated with a column.
