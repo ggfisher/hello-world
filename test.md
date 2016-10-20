@@ -18,3 +18,5 @@ WHERE age < 30
 Projection
 
 > **π<sub>name</sub>(σ<sub>bid=102</sub>(Sailors⋈<sub>sid</sub>Reserves))**
+
+> **πsname(πsid((πpidσcolor=redParts)  Catalog)  Suppliers)**
