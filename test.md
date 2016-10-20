@@ -29,7 +29,7 @@ SQL   SELECT S.sname
       
 Find the sids of suppliers who supply some red or green part. 
 
-RA    **π<sub>sid</sub>(π<sub>pid</sub>((σ<sub>color='red'Vcolor='green'</sub>Parts)⋈Catalog))** 
+RA    **π<sub>sid</sub>(π<sub>pid</sub>(σ<sub>color='red' V color='green'</sub>Parts)⋈Catalog)** 
       
 
 
