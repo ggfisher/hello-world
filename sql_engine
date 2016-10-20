@@ -10,13 +10,10 @@ WHERE S.age >= 18
 GROUP S.rating  
 BY HAVING COUNT (*) > 1  
 
-Instance 83  of Sailors
+Instance 83 of Sailors
 
 |sid|sname|rating|age|
 |---|---|---|---|
-
-
-
 |22|Dustin|7|45.0|
 |29|Brutus|1|33.0|
 |31|Lubber|8|55.5|
