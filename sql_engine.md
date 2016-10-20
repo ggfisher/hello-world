@@ -10,8 +10,6 @@ GROUP S.rating
 BY HAVING COUNT (*) > 1
 
 |sid|sname|rating|age|
-
-|sid|sname|rating|age|
 |---|---|---|---|
 |22|Dustin|7|45.0|
 |29|Brutus|1|33.0|
@@ -24,7 +22,3 @@ BY HAVING COUNT (*) > 1
 |85|Art|3|25.5|
 |95|Bob|3|63.5|
 |96|Frodo|3|25.5|
-
-|a|b|c|d|
-|---|---|---|---|
-
