@@ -92,6 +92,18 @@ SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sid
 
 As can be seen, the __ANY__ in the previous query was replaced with an __ALL__ in this one.  This query would return sids 58 and 71.  
 
+__*Find the 8ailor's with the highest rating.*__
+
+SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sid  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Sailors S  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE S.rating > ALL (SELECT S2.rating  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Sailors S2)  
+
+This query would return the sids of the sailors with a rating of 10 belonging to sid 58 and 71.  
+
+
+
+
 
 
 
