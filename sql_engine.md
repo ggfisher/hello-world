@@ -2,6 +2,7 @@
 2. Delete rows in the cross-product that fail the qualification conditions.
 3. Delete all columns that do not appear in the select-list.
 4. If DISTINCT is specified, eliminate duplicate rows.
+5. Sort the table according to the GROUP BY clause to identify the groups.
 
 SELECT S.rating, MIN (S.age) AS minage  
 FROM Sailors S  
