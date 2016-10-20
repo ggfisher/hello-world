@@ -13,3 +13,8 @@ FROM Sailors
 WHERE age < 30  
 
 > **π<sub>name,age</sub>(σ<sub>age<30</sub>(Sailors))**
+
+
+Projection
+
+RA > **π<sub>name</sub>(σ<sub>bid=102</sub>(Sailors⋈<sub>sid</sub>Reserves))**
