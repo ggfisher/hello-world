@@ -172,20 +172,6 @@ So in this relation, employeeID is a candidate key.  Also, no values in the empl
 Out of all the available candidate keys, a database designer can identify a primary key.
 
 ## Chapter 4
-### Relational Algebra Topics
-
-Projection
-
-RA 
-$\rho\$
-<sub>A<sub>1</sub></sub>
-
-
-
-
-
-
-
 
 __I will use bold italics for primary keys in this section - I don't think Markdown supports underlines.  If someone knows how to do it please add this feature to the primary keys.__
 
