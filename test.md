@@ -4,7 +4,7 @@ Suppliers(__*sid*__: integer, sname: string, address: string)
 Parts(__*pid*__: integer, pname: string, color: string)   
 Catalog(__*sid: integer, pid: integer*__, cost: real)  
 
-Find the names of suppliers who supply a red part. 
+__Find the names of suppliers who supply a red part.__  
 
 RA&nbsp;&nbsp;&nbsp;**π<sub>sname</sub>(π<sub>sid</sub>((π<sub>pid</sub>σ<sub>color='red'</sub>Parts)⋈Catalog)⋈Suppliers)**
 
@@ -12,7 +12,7 @@ SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Suppliers S, Parts P, Catalog C   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE P.color=’red’ AND C.pid=P.pid AND C.sid=S.sid  
       
-Find the sids of suppliers who supply some red or green part. 
+__Find the sids of suppliers who supply some red or green part.__
 
 RA          **π<sub>sid</sub>(π<sub>pid</sub>(σ<sub>color='red' V color='green'</sub>Parts)⋈Catalog)** 
       
