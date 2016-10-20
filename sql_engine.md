@@ -7,7 +7,8 @@ SELECT S.rating, MIN (S.age) AS minage
 FROM Sailors S  
 WHERE S.age >= 18  
 GROUP S.rating  
-BY HAVING COUNT (*) > 1
+BY HAVING COUNT (*) > 1  
+
 
 |sid|sname|rating|age|
 |---|---|---|---|
