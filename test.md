@@ -25,7 +25,7 @@ Suppliers(__*sid*__: integer, sname: string, address: string)
 Parts(__*pid*__: integer, pname: string, color: string)   
 Catalog(__*sid: integer, pid: integer*__, cost: real)  
 
-Find the names of suppliers who supply some red part. 
+Find the names of suppliers who supply a red part. 
 
 RA&nbsp;&nbsp;&nbsp;**π<sub>sname</sub>(π<sub>sid</sub>((π<sub>pid</sub>σ<sub>color='red'</sub>Parts)⋈Catalog)⋈Suppliers)**
 
