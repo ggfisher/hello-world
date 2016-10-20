@@ -27,5 +27,9 @@ SQL   SELECT S.sname
       FROM Suppliers S, Parts P, Catalog C   
       WHERE P.color=’red’ AND C.pid=P.pid AND C.sid=S.sid  
       
+Find the sids of suppliers who supply some red or green part. 
+
+RA    **π<sub>sid</sub>(π<sub>pid</sub>((σ<sub>color='red'Vcolor='green'</sub>Parts)⋈Catalog))** 
+      
 
 
