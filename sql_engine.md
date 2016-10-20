@@ -4,6 +4,7 @@
 4. If DISTINCT is specified, eliminate duplicate rows.
 5. Sort the table according to the GROUP BY clause to identify the groups.
 6. Apply the group-qualification in the HAVING clause.
+7. Generate one answer row for each remaining group.
 
 SELECT S.rating, MIN (S.age) AS minage  
 FROM Sailors S  
