@@ -1,7 +1,7 @@
 
 ## SQL queries  
 
-Instance 83  
+Instance 83  of Sailors    
 
 |sid|sname|rating|age|
 |---|---|---|---|
@@ -16,9 +16,7 @@ Instance 83
 |85|Art|3|25.5|
 |95|Bob|3|63.5|
 
-
-Instance R2  
-
+Instance R2 of Reserves    
 |sid|bid|day|
 |---|---|---|
 |22|101|10/10/98|
@@ -31,3 +29,11 @@ Instance R2
 |64|101|9/5/98|
 |64|102|9/8/98|
 |74|103|9/8/98|
+
+Instance HI of Boats  
+|bid|bname|color|
+|---|---|---|
+|101|Interlake|blue|
+|102|Interlake|red|
+|103|Clipper|green|
+|104|Marine|red|
