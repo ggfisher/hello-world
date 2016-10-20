@@ -17,6 +17,7 @@ Instance 83  of Sailors
 |95|Bob|3|63.5|
 
 Instance R2 of Reserves  
+
 |sid|bid|day|
 |---|---|---|
 |22|101|10/10/98|
@@ -31,6 +32,7 @@ Instance R2 of Reserves
 |74|103|9/8/98|
 
 Instance HI of Boats  
+
 |bid|bname|color|
 |---|---|---|
 |101|Interlake|blue|
