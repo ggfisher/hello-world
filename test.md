@@ -118,6 +118,6 @@ __*Find the pids of parts supplied by at least two diﬀerent suppliers.*__
 
 RA&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R1,Catalog)**    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R2,Catalog)**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;π<sub>R1.pidσR1.pid=R2.pid∧R1.sid$\neq$R2.sid</sub>(R1×R2))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;π<sub>R1.pid</sub>σ<sub>R1.pid=R2.pid∧R1.sid$\neq$R2.sid</sub>(R1×R2))  
 
 
