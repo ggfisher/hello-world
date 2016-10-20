@@ -114,5 +114,10 @@ SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT C1.sid C2.sid
 
 **Note - I couldn't get the not equal sign to work so $\neq$ should be the not equal sign**  
 
+__*Find the pids of parts supplied by at least two diﬀerent suppliers.*__  
+
+RA&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R1,((π<sub>sid,pid</sub>Catalog)**    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R2,((π<sub>sid,pid</sub>Catalog)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;π<sub>R1.pidσR1.pid=R2.pid∧R1.sid$\neq$R2.sid</sub>(R1×R2))  
 
 
