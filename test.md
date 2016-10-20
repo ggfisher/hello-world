@@ -29,7 +29,7 @@ Find the names of suppliers who supply some red part.
 
 RA    **π<sub>sname</sub>(π<sub>sid</sub>((π<sub>pid</sub>σ<sub>color='red'</sub>Parts)⋈Catalog)⋈Suppliers)**
 
-SQL         
+SQL          
 
 SELECT          S.sname  
                 FROM Suppliers S, Parts P, Catalog C   
