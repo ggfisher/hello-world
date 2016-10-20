@@ -16,7 +16,7 @@ Instance 83  of Sailors
 |85|Art|3|25.5|
 |95|Bob|3|63.5|
 
-Instance R2 of Reserves    
+Instance R2 of Reserves  
 |sid|bid|day|
 |---|---|---|
 |22|101|10/10/98|
