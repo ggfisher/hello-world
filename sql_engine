@@ -10,7 +10,7 @@ WHERE S.age >= 18
 GROUP S.rating  
 BY HAVING COUNT (*) > 1  
 
-Instance 83  of Sailors    
+Instance 83  of Sailors
 
 |sid|sname|rating|age|
 |---|---|---|---|
