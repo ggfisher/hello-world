@@ -1,4 +1,4 @@
-1. Compute the cross-product of the tables in the from-list.
+1. Compute the cross-product of the tables in the from-list - this is all of the tables in the FROM statement.
 2. Delete rows in the cross-product that fail the qualification conditions - this is the WHERE clause.
 3. Delete all columns that do not appear in the select-list.
 4. If DISTINCT is specified, eliminate duplicate rows.
