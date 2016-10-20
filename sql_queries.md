@@ -52,3 +52,6 @@ SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname
 
 The set contains the names of the sailors associated with sid 22,31, and 74.  This query could be modified to find all sailors who have not reserved boat 103 by replacing __IN__ by __NOT IN__.  
 
+Find the names of sailors 'who ha'ue reserved a red boat.  
+
+
