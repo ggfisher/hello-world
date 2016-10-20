@@ -29,11 +29,9 @@ Find the names of suppliers who supply some red part.
 
 RA    **π<sub>sname</sub>(π<sub>sid</sub>((π<sub>pid</sub>σ<sub>color='red'</sub>Parts)⋈Catalog)⋈Suppliers)**
 
-SQL          
-
-SELECT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S.sname  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                FROM Suppliers S, Parts P, Catalog C   
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE P.color=’red’ AND C.pid=P.pid AND C.sid=S.sid  
+SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname          
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Suppliers S, Parts P, Catalog C   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE P.color=’red’ AND C.pid=P.pid AND C.sid=S.sid  
       
 Find the sids of suppliers who supply some red or green part. 
 
