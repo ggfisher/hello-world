@@ -1,4 +1,4 @@
-Consider the following schema:  
+Consider the following schema - the primary keys are bold italic:  
 
 Suppliers(__*sid*__: integer, sname: string, address: string)   
 Parts(__*pid*__: integer, pname: string, color: string)   
