@@ -128,6 +128,11 @@ SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT C.pid
 
 **Note - I couldn't get the not equal sign to work so $\neq$ should be the not equal sign**  
 
+__*Find the pids of the most expensive parts supplied by suppliers named Yosemite Sham.*__
+
+RA&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R1,π<sub>sid</sub>π<sub>sname='YosemiteSham'</sub>Suppliers)**    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R2,R1 ⋈ Catalog)**  
+
 
 
 
