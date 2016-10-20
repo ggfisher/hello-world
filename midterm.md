@@ -177,7 +177,7 @@ Out of all the available candidate keys, a database designer can identify a prim
 Projection
 
 RA 
-$\Pi$
+$\rho\$
 <sub>A<sub>1</sub></sub>
 
 
