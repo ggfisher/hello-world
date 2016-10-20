@@ -19,4 +19,13 @@ Projection
 
 **π<sub>name</sub>(σ<sub>bid=102</sub>(Sailors⋈<sub>sid</sub>Reserves))**
 
-**π<sub>sname</sub>(π<sub>sid</sub>((π<sub>pid</sub>σ<sub>color='red'</sub>Parts)⋈Catalog)⋈Suppliers)**
+Find the names of suppliers who supply some red part. 
+
+RA    **π<sub>sname</sub>(π<sub>sid</sub>((π<sub>pid</sub>σ<sub>color='red'</sub>Parts)⋈Catalog)⋈Suppliers)**
+
+SQL   SELECT S.sname  
+      FROM Suppliers S, Parts P, Catalog C   
+      WHERE P.color=’red’ AND C.pid=P.pid AND C.sid=S.sid  
+      
+
+
