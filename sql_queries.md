@@ -40,7 +40,7 @@ Instance HI of Boats
 |103|Clipper|green|
 |104|Marine|red|
 
-  
+### Some queries related to the above table  
     
 SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname          
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Suppliers S, Parts P, Catalog C   
