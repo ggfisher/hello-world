@@ -103,8 +103,8 @@ SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT C.sid
 
 __*Find pairs of sids such that the supplier with the ﬁrst sid charges more for some part than the supplier with the second sid.*__  
 
-RA&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R1,((π<sub>sid,pid</sub>Catalog)**    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R2,((π<sub>sid,pid</sub>Catalog)**  
+RA&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R1,Catalog)**    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R2,Catalog)**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;π<sub>R1.sid,R2.sid</sub>(σ<sub>R1.pid=R2.pid∧R1.sid$\neq$R2.sid∧R1.cost>R2.cost</sub>(R1×R2))  
 
 SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT C1.sid C2.sid  
@@ -116,8 +116,8 @@ SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT C1.sid C2.sid
 
 __*Find the pids of parts supplied by at least two diﬀerent suppliers.*__  
 
-RA&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R1,((π<sub>sid,pid</sub>Catalog)**    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R2,((π<sub>sid,pid</sub>Catalog)**  
+RA&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R1,Catalog)**    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R2,Catalog)**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;π<sub>R1.pidσR1.pid=R2.pid∧R1.sid$\neq$R2.sid</sub>(R1×R2))  
 
 
