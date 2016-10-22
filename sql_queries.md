@@ -1,5 +1,5 @@
 
-## SQL queries  
+## Additional SQL queries with Relational Algebra Equivalents  
 
 Instance 83  of Sailors    
 
