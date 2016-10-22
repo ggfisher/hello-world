@@ -47,7 +47,7 @@ SELECT DISTINCT F.fname
 FROM Faculty F  
 WHERE NOT EXISTS (( SELECT *  
 FROM Class C )  
-EXCEPT (SELECTC1.room  
+EXCEPT (SELECT C1.room  
 FROM Class C1  
 WHERE C1.ﬁd = F.ﬁd))  
 
