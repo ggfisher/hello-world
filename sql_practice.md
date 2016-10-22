@@ -20,3 +20,10 @@ OR S.snum IN (SELECT E.snum
 FROM Class C, Enrolled E, Faculty F  
 WHERE E.cname = C.name AND C.ﬁd = F.ﬁd AND F.fname = ‘I.Teach’)  
 
+__*Find the names of all classes that either meet in room R128 or have ﬁve or more students enrolled*__  
+
+SELECT C.name,    
+FROM Class C, Enrolled E  
+WHERE C.room = 'R128'  
+OR 
+
