@@ -140,3 +140,4 @@ SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.rating, MIN (S.age) AS minage
 
 
 
+
