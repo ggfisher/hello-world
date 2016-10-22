@@ -90,6 +90,15 @@ HAVING COUNT (*) >= ALL (SELECT COUNT (*)
 FROM Enrolled E2  
 GROUP BY E2.snum ))  
 
+__*Find the names of students not enrolled in any class*__  
+
+SELECT DISTINCT S.sname  
+FROM Student S  
+WHERE S.snum NOT IN (SELECT E.snum  
+FROM Enrolled E)  
+
+
+
 
 
 
