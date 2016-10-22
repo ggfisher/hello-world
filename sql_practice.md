@@ -3,7 +3,7 @@ __*Consider the following schema*__
 Student(__snum: integer__, sname: string, major: string, level: string, age: integer)  
 Class(__name: string__, meets_at: time, room: string, fid: integer)  
 Enrolled(snum: integer, __cname: string__)  
-Faculty(__fid: integer__, fnarne: string, deptid: integer)  
+Faculty(__fid: integer__, fname: string, deptid: integer)  
 
 ** Find the names of all Juniors (level = JR) who are enrolled in a class taught by I. Teach. **  
 
@@ -41,7 +41,13 @@ AND E1.cname = C1.name
 AND E2.cname = C2.name  
 AND C1.meets_at = C2.meets_at)  
 
+__*Find the names of faculty members who teach in every room in which some class is taught*__  
 
-
-
+SELECT DISTINCT F.fname  
+FROM Faculty F  
+WHERE NOT EXISTS (( SELECT *  
+FROM Class C )  
+EXCEPT (SELECTC1.room  
+FROM Class C1  
+WHERE C1.ﬁd = F.ﬁd))  
 
