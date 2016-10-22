@@ -23,7 +23,8 @@ WHERE E.cname = C.name AND C.ﬁd = F.ﬁd AND F.fname = ‘I.Teach’)
 __*Find the names of all classes that either meet in room R128 or have ﬁve or more students enrolled*__  
 
 SELECT C.name,    
-FROM Class C, Enrolled E  
+FROM Class C  
 WHERE C.room = 'R128'  
-OR 
+OR C.name IN (SELECT E.cname FROM Enrolled E GROUP BY E.cname HAVING COUNT(*) >=5)  
+
 
