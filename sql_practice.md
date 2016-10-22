@@ -79,6 +79,18 @@ WHERE F.ﬁd = C.ﬁd
 GROUP BY F.ﬁd, F.fname  
 HAVING EVERY ( C.room = ‘R128’ )  
 
+__*Find the names of students enrolled in the maximum number of classes*__  
+
+SELECT DISTINCT S.sname  
+FROM Student S  
+WHERE S.snum IN (SELECT E.snum  
+FROM Enrolled E  
+GROUP BY E.snum  
+HAVING COUNT (*) >= ALL (SELECT COUNT (*)  
+FROM Enrolled E2  
+GROUP BY E2.snum ))  
+
+
 
 
 
