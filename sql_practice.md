@@ -59,6 +59,25 @@ WHERE 5 > (SELECT COUNT (E.snum)
 FROM Class C, Enrolled E  
 WHERE C.name = E.cname AND C.ﬁd = F.ﬁd)  
 
+__*For each level, print the level and the average age of students for that level*__  
+
+SELECT S.level, AVG(S.age)  
+FROM Student S GROUP BY S.level  
+ 
+ __*For all levels except JR, print the level and the average age of students for that level*__  
+ 
+SELECT S.level, AVG(S.age)  
+FROM Student S  
+WHERE S.level <> ‘JR’  
+GROUP BY S.level 
+
+__*For each faculty member that has taught classes only in room R128, print the faculty member’s name and the total number of classes she or he has taught*__
+
+SELECT F.fname, COUNT(*) AS CourseCount  
+FROM Faculty F, Class C  
+WHERE F.ﬁd = C.ﬁd  
+GROUP BY F.ﬁd, F.fname  
+HAVING EVERY ( C.room = ‘R128’ )  
 
 
 
