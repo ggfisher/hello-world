@@ -14,13 +14,9 @@ WHERE S.snum = E.snum AND E.cname = C.name AND C.ﬁd = F.ﬁd AND F.fname = ‘
 __*Find the age of the oldest student who is either a History major or enrolled in a course taught by I.Teach*__  
 
 SELECT max(S.age)  
-FROM Student S, Class C, Enrolled E, Faculty F  
-WHERE S.snum = E.snum AND E.cname = C.name AND C.ﬁd = F.ﬁd AND F.fname = ‘I.Teach’  
-UNION  
-SELECT max(S.age)  
 FROM Student S  
-WHERE S.major = 'History'  
-
-
-
+WHERE (S.major = 'History')  
+OR S.snum IN (SELECT E.snum   
+FROM Class C, Enrolled E, Faculty F  
+WHERE E.cname = C.name AND C.ﬁd = F.ﬁd AND F.fname = ‘I.Teach’)  
 
