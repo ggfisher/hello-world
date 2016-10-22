@@ -66,6 +66,8 @@ SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname
 
 The result of this query would be to return the names Dustin, Lubber, and Horatio.  To find the names of sailors who have not reserved a red boat we replace the outermost __IN__ by __NOT IN__.  
 
+RA&nbsp;&nbsp;&nbsp;**π<sub>sname</sub>(π<sub>sid</sub>((π<sub>bid</sub>σ<sub>color='red'</sub>Boats)⋈Reserves)⋈Sailors)**  
+
 __*Find the names of sailors who have reserved boat number 103. - using EXISTS*__  
 
 SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname  
