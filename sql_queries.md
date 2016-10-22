@@ -54,7 +54,7 @@ The set contains the names of the sailors associated with sid 22,31, and 74.  Th
 
 RA&nbsp;&nbsp;&nbsp;**π<sub>sname</sub>(σ<sub>bid='103'</sub>Reserves)⋈Sailors)**    
 
-__*Find the names of sailors 'who ha'ue reserved a red boat.*__  
+__*Find the names of sailors who have reserved a red boat.*__  
 
 SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Sailors S  
