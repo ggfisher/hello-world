@@ -51,3 +51,15 @@ EXCEPT (SELECT C1.room
 FROM Class C1  
 WHERE C1.ﬁd = F.ﬁd))  
 
+__*Find the names of faculty members for whom the combined enrollment of the courses that they teach is less than ﬁve*__  
+
+SELECT DISTINCT F.fname  
+FROM Faculty F  
+WHERE 5 > (SELECT COUNT (E.snum)  
+FROM Class C, Enrolled E  
+WHERE C.name = E.cname AND C.ﬁd = F.ﬁd)  
+
+
+
+
+
