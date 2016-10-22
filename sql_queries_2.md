@@ -84,5 +84,14 @@ Consider the following attempt to answer this query:
 SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname, MAX (S.sid)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Sailors S  
 
-The intent is for this query to return not only the maximum age but also the name of the sailors having that age. However, this query is illegal in SQL. If the SELECT clause uses an aggregate operation, then it must use only aggregate operations unless the query contains a GROUP BY clause.
+The intent is for this query to return not only the maximum age but also the name of the sailors having that age. However, this query is illegal in SQL. If the SELECT clause uses an aggregate operation, then it must use only aggregate operations unless the query contains a GROUP BY clause.  
+We have to use a nested query to compute the desired answer:  
+
+SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname, S.age  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Sailors S  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE S.age = (SELECT MAX (S2.age)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Sailors S2)  
+
+
+
 
