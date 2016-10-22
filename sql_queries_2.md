@@ -68,12 +68,12 @@ SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT R.sid
 
 __*Find the average age of all sailors*__
 
-SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT AVG (S.sid)  
+SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT AVG (S.age)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Sailors S  
 
 __*Find the average age of sailors with a rating of 10*__
 
-SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT AVG (S.sid)  
+SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT AVG (S.age)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Sailors S  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE S.rating = 10  
 
@@ -81,7 +81,7 @@ __*Find the name and age of the oldest sailor*__
 
 Consider the following attempt to answer this query:  
 
-SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname, MAX (S.sid)  
+SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname, MAX (S.age)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Sailors S  
 
 The intent is for this query to return not only the maximum age but also the name of the sailors having that age. However, this query is illegal in SQL. If the SELECT clause uses an aggregate operation, then it must use only aggregate operations unless the query contains a GROUP BY clause.  
