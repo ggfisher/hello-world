@@ -1,6 +1,8 @@
 
 ## Additional SQL queries with Relational Algebra Equivalents  
 
+CREATE TABLE Sailors ( sid INTEGER, sname CHAR(10), rating INTEGER, age REAL, PRIMARY KEY (sid), CHECK (rating >= 1 AND rating <= 10 ))  
+
 Instance 83  of Sailors    
 
 |sid|sname|rating|age|
