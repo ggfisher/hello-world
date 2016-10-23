@@ -1,9 +1,9 @@
 
 ## Additional SQL queries with Relational Algebra Equivalents  
 
-Sailors(sid: integer, sname: string, rating: integer, age: real)  
-Boats(bid: integer, bname: string, color: string)  
-Reserves(sid: integer, bid: integer, day: date)  
+Sailors(__sid__: integer, sname: string, rating: integer, age: real)  
+Boats(__bid__: integer, bname: string, color: string)  
+Reserves(__sid__: integer, __bid__: integer, __day__: date)  
 
 
 Instance 83  of Sailors    
