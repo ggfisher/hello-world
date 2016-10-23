@@ -47,6 +47,10 @@ Instance HI of Boats
 
 ### Some queries related to the above table  
 
+Sailors(__sid__: integer, sname: string, rating: integer, age: real)  
+Boats(__bid__: integer, bname: string, color: string)  
+Reserves(__sid__: integer, __bid__: integer, __day__: date)  
+
 __*Find the names of sailors who have reserved boat 103.*__
 
 SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT S.sname  
