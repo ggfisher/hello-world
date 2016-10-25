@@ -1,5 +1,5 @@
 1: Find the names of liquors that had at least one sale in "Clarke" or "Marshall" counties for the month of October.  
-ρ(Clarke, π<sub>liquors</sub>(σ</sub> month='October' ^ county= 'Clarke' ^ quantity > 0</sub>(sales))    
+**ρ(Clarke, π<sub>liquors</sub>(σ<sub>month='October' ^ county= 'Clarke' ^ quantity > 0</sub>(sales))**  
 RA&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R1,π<sub>sid</sub>((π<sub>pid</sub>σ<sub>color='red'</sub>Parts)⋈Catalog))**   
 $\rho$(Marshall, $\Pi$liquors($\sigma$month="October" $\wedge$ county="Marshall" $\wedge$ quantity$>$0(sales))  
 $\rho$(S(liquors$\rightarrow$lid), Clarke $\cup$ Marshall)  
