@@ -9,9 +9,9 @@ sales(<u>month</u>, <u>seller</u>, <u>liquors</u>, county, quantity)
 2: Find the names of manufacturers that sold at least two different liquors during the month of October in "Clarke" county.  
 **ρ(Clarke, π<sub>liquors</sub>(σ<sub>month='October' ^ county= 'Clarke' ^ quantity > 0</sub>(sales))**  
 **ρ(Liq,**π<sub>lid,manufacturer</sub>(S ⋈ liquors)**  
-**ρ(M,1->lid1, 3->lid2), Liqπ<sub>manufacturer</sub> ⋈ Liq)**  
-$\rho$(M(1$\rightarrow$lid1, 3$\rightarrow$lid2), Liq $\bowtie$manufacturer Liq)  
-$\Pi$manufacturer($\sigma$lid1$\neq$lid2(M))  
+**ρ(M,1->lid1, 3->lid2), Liq π<sub>manufacturer</sub> ⋈ Liq)**  
+π<sub>manufacturer</sub>(
+$\Pi$manufacturer(σ<sub>lid1 NE lid2  0</sub>(M))  
 
 Consider the following schema - the primary keys are __*bold italic*__:  
 
