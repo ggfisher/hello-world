@@ -10,7 +10,7 @@ sales(<u>month</u>, <u>seller</u>, <u>liquors</u>, county, quantity)
 **ρ(S(liquors->lid, π<sub>liquors</sub>(σ<sub>month='October' ^ county= 'Clarke' ^ quantity > 0</sub>(sales))**  
 **ρ(Liq,**π<sub>lid,manufacturer</sub>(S ⋈ liquors)**  
 **ρ(M,1->lid1, 3->lid2), Liq π<sub>manufacturer</sub> ⋈ Liq)**  
-**π<sub>manufacturer</sub>(σ<sub>lid1 NE lid2</sub>(M))  
+**π<sub>manufacturer</sub>(σ<sub>lid1 NE lid2</sub>(M))**  
 
 
 Consider the following schema - the primary keys are __*bold italic*__:  
