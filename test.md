@@ -1,10 +1,13 @@
-Find the names of liquors that had at least one sale in "Clarke" or "Marshall" counties for the month of October.
-
-ρ(Clarke, π<sub>liquors</sub>(</sub>σ<sub>month='October'^county="Clarke"^quantity>0(sales))
-$\rho$(Marshall, $\Pi$liquors($\sigma$month="October" $\wedge$ county="Marshall" $\wedge$ quantity$>$0(sales))
-$\rho$(S(liquors$\rightarrow$lid), Clarke $\cup$ Marshall)
-$\Pi$name(S $\bowtie$ liquors)
-
+1: Find the names of liquors that had at least one sale in "Clarke" or "Marshall" counties for the month of October.  
+$\rho$(Clarke, $\Pi$liquors($\sigma$month="October" $\wedge$ county="Clarke" $\wedge$ quantity$>$0(sales))  
+$\rho$(Marshall, $\Pi$liquors($\sigma$month="October" $\wedge$ county="Marshall" $\wedge$ quantity$>$0(sales))  
+$\rho$(S(liquors$\rightarrow$lid), Clarke $\cup$ Marshall)  
+$\Pi$name(S $\bowtie$ liquors)  
+2: Find the names of manufacturers that sold at least two different liquors during the month of October in "Clarke" county.  
+$\rho$(S(liquors$\rightarrow$lid), $\Pi$liquors($\sigma$month="October" $\wedge$ county="Clarke" $\wedge$ quantity$>$0(sales))  
+$\rho$(Liq, $\Pi$lid, manufacturer(S $\bowtie$ liquors)  
+$\rho$(M(1$\rightarrow$lid1, 3$\rightarrow$lid2), Liq $\bowtie$manufacturer Liq)  
+$\Pi$manufacturer($\sigma$lid1$\neq$lid2(M))  
 
 Consider the following schema - the primary keys are __*bold italic*__:  
 
