@@ -7,7 +7,8 @@ sales(<u>month</u>, <u>seller</u>, <u>liquors</u>, county, quantity)
 **π<sub>name</sub>(S ⋈ liquors)**    
 
 2: Find the names of manufacturers that sold at least two different liquors during the month of October in "Clarke" county.  
-**ρ(Clarke, π<sub>liquors</sub>(σ<sub>month='October' ^ county= 'Clarke' ^ quantity > 0</sub>(sales))**  
+$\rho$(S(liquors$\rightarrow$lid), $\Pi$liquors($\sigma$month="October" $\wedge$ county="Clarke" $\wedge$ quantity$>$0(sales))  
+**ρ(S(liquors->lid, π<sub>liquors</sub>(σ<sub>month='October' ^ county= 'Clarke' ^ quantity > 0</sub>(sales))**  
 **ρ(Liq,**π<sub>lid,manufacturer</sub>(S ⋈ liquors)    
 **ρ(M,1->lid1, 3->lid2), Liq π<sub>manufacturer</sub> ⋈ Liq)**  
 **π<sub>manufacturer</sub>(σ<sub>lid1 NE lid2</sub>(M))  
