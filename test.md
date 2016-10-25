@@ -1,3 +1,11 @@
+Find the names of liquors that had at least one sale in "Clarke" or "Marshall" counties for the month of October.
+
+ρ(Clarke, π<sub>liquors</sub>(</sub>σ<sub>month='October'^county="Clarke"^quantity>0(sales))
+$\rho$(Marshall, $\Pi$liquors($\sigma$month="October" $\wedge$ county="Marshall" $\wedge$ quantity$>$0(sales))
+$\rho$(S(liquors$\rightarrow$lid), Clarke $\cup$ Marshall)
+$\Pi$name(S $\bowtie$ liquors)
+
+
 Consider the following schema - the primary keys are __*bold italic*__:  
 
 Suppliers(__*sid*__: integer, sname: string, address: string)   
