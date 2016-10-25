@@ -1,7 +1,8 @@
 1: Find the names of liquors that had at least one sale in "Clarke" or "Marshall" counties for the month of October.  
 **ρ(Clarke, π<sub>liquors</sub>(σ<sub>month='October' ^ county= 'Clarke' ^ quantity > 0</sub>(sales))**  
+**ρ(Marshall, π<sub>liquors</sub>(σ<sub>month='October' ^ county= 'Marshall' ^ quantity > 0</sub>(sales))**  
 RA&nbsp;&nbsp;&nbsp;&nbsp;**ρ(R1,π<sub>sid</sub>((π<sub>pid</sub>σ<sub>color='red'</sub>Parts)⋈Catalog))**   
-$\rho$(Marshall, $\Pi$liquors($\sigma$month="October" $\wedge$ county="Marshall" $\wedge$ quantity$>$0(sales))  
+**ρ(S(liquors->lid),Clarke U Marshall)  
 $\rho$(S(liquors$\rightarrow$lid), Clarke $\cup$ Marshall)  
 $\Pi$name(S $\bowtie$ liquors)  
 2: Find the names of manufacturers that sold at least two different liquors during the month of October in "Clarke" county.  
