@@ -1,3 +1,5 @@
+liquors(<u>lid</u>, name, price, manufacturer)  
+sales(<u>month</u>, <u>seller</u>, <u>liquors</u>, county, quantity)  
 1: Find the names of liquors that had at least one sale in "Clarke" or "Marshall" counties for the month of October.  
 **ρ(Clarke, π<sub>liquors</sub>(σ<sub>month='October' ^ county= 'Clarke' ^ quantity > 0</sub>(sales))**  
 **ρ(Marshall, π<sub>liquors</sub>(σ<sub>month='October' ^ county= 'Marshall' ^ quantity > 0</sub>(sales))**  
