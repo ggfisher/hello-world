@@ -15,7 +15,7 @@ In the following schema,
 An attribute of relation schema R is called a __prime attribute__ of R if it is a member of some candidate key of R. An attribute 
 is called __nonprime__ if it is not a prime attribute—that is, if it is not a member of any candidate key.
 
-In the following schema, both Ssn and Pnumber are prime attributes whereas the _Hours_ attribute is nonprime:
+In the following schema, both Ssn and Pnumber are prime attributes whereas the __Hours__ attribute is nonprime:
 
 |_**Ssn**_|_**Pnumber**_|Hours|
 |---|---|---|
