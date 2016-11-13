@@ -255,3 +255,31 @@ A relation schema R __is in 3NF__ if every nonprime attribute of R meets both of
 - It is nontransitively dependent on every key of R.
 
 ##Boyce-Codd Normal Form
+
+__Definition__ A relation schema R is in BCNF if whenever a nontrivial functional dependency X→A holds in R, then X is a superkey of R.
+
+BCNF was proposed as a simpler form of 3NF, but it was found to be stricter than 3NF. That is, every relation in BCNF is also in 3NF; however, a relation in 3NF is not necessarilyin BCNF. Intuitively, we can see the need for a stronger normal form than 3NF by going back to the LOTS relation schema shown above with its four functional dependencies FD1 through FD4. Suppose that we have thousands of lots in the relation but the lots are from only two counties: DeKalb and Fulton. Suppose also that lot sizes in DeKalb County are only 0.5, 0.6, 0.7, 0.8, 0.9, and 1.0 acres, whereas lot sizes in Fulton County are restricted to 1.1,1.2,...,1.9,and 2.0 acres. In such a situation we would have the additional functional dependency 
+
+- FD5: Area → County_name. 
+
+If we add this to the other dependencies, the relation schema LOTS1A still is in 3NF because County_name is a prime attribute.
+
+The area of a lot that determines the county, as specified by FD5, can be represented by 16 tuples in a separate relation R(Area,County_name), LOTS1AY relation below, since there are only 16 possible Area values.  This representation reduces the redundancy of repeating the same information in the thousands of LOTS1A tuples. BCNF is a stronger normal form that would disallow LOTS1A and suggest the need for decomposing it. 
+
+_LOTS1A relation in 3NF_
+
+|_**Property_id**_|County_name|Lot#|Area|
+|---|---|---|---|
+
+###BCNF Normalization
+
+_LOTS1AX relation_
+
+|_**Property_id**_|Lot#|Area|
+|---|---|---|
+
+_LOTS1AY relation_
+
+|_**Area**_|County_name|
+|---|---|
+
