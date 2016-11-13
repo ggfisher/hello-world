@@ -5,7 +5,7 @@ __Definition__. A superkey of a relation schema R = {A1, A2, ... , An} is a set 
 
 The difference between a key and a superkey is that a key has to be minimal; that is, if we have a key K = {A1,A2,...,Ak} of R,then K – {Ai} is not a key of R for any Ai,1 ≤ i ≤ k. 
 
-In the following schema, 
+In the following schema: 
 
 |Ename|_**SSn**_|Bdate|Address|Dnumber|
 |---|---|---|---|---|
@@ -124,4 +124,4 @@ _EMP_PROJ relation functional dependencies:_
 
 {Ssn, Pnumber} → Hours is a full dependency (neither Ssn → Hours nor Pnumber → Hours holds). However, the dependency {Ssn, Pnumber} → Ename is partial because Ssn → Ename holds.
 
-The test for 2NF involves testing for functional dependencies whose left-hand side attributes are part of the primary key.If the primary key contains a single attribute, the test need not be applied at all. The EMP_PROJ relation is in 1NF but is not in 2NF. The nonprime attribute Ename violates 2NF because of FD2, as do the nonprime attributes Pname and Plocation because of FD3. The functional dependencies FD2 and FD3 make Ename, Pname, and Plocation partially dependent on the primary key {Ssn,Pnumber} of EMP_PROJ,thus violating the 2NF test.
+The test for 2NF involves testing for functional dependencies whose left-hand side attributes are part of the primary key.If the primary key contains a single attribute, the test need not be applied at all. The EMP_PROJ relation is in 1NF but is not in 2NF. The nonprime attribute Ename violates 2NF because of FD2, as do the nonprime attributes Pname and Plocation because of FD3. The functional dependencies FD2 and FD3 make Ename, Pname, and Plocation partially dependent on the primary key {Ssn,Pnumber} of EMP_PROJ, thus violating the 2NF test.
