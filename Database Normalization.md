@@ -213,12 +213,34 @@ _LOTS2 relation_
 |_**County_name**_|Tax_rate|
 |---|---|
 
-
-
-
-
+We construct LOTS1 by removing the attribute Tax_rate that violates 2NF from LOTS and placing it with County_name (the left-hand side of FD3 that causes the partial dependency) into another relation LOTS2. Both LOTS1 and LOTS2 are in 2NF. Notice that FD4 does not violate 2NF and is carried over to LOTS1.
 
 ### _General Definitions of Third Normal Forms_
+
+__Definition__ A relation schema R is in third normal form (3NF) if, whenever a nontrivial functional dependency X → A holds in R, when either:
+
+- X is a superkey of R or
+- A is a prime attribute of R. 
+
+According to this definition, LOTS2 is in 3NF. However, FD4 in LOTS1 violates 3NF because Area is not a superkey and Price is not a prime attribute in LOTS1. To normalize LOTS1 into 3NF,we decompose it into the relation schemas LOTS1A and LOTS1B as shown below:
+
+_LOTS1A relation_
+
+|_**Property_id**_|County_name|Lot#|Area|
+|---|---|---|---|
+
+_LOTS1B relation_
+
+|_**Area**_|Price|
+|---|---|
+
+
+We construct LOTS1A by removing the attribute Price that violates 3NF from LOTS1 and placing it with Area (the lefthand side of FD4 that causes the transitive dependency) into another relation LOTS1B.Both LOTS1A and LOTS1B are in 3NF. 
+
+Two points are worth noting about this example and the general definition of 3NF: 
+
+- LOTS1 violates 3NF because Price is transitively dependent on each of the candidate keys of LOTS1 via the nonprime attribute Area.
+- This general definition can be applied directly to test whether a relation schema is in 3NF; it does not have to go through 2NF first. If we apply the above 3NF definition to LOTS with the dependencies FD1 through FD4, we find that both FD3 and FD4 violate 3NF. Therefore, we could decompose LOTS into LOTS1A, LOTS1B, and LOTS2 directly. Hence, the transitive and partial dependencies that violate 3NF can be removed in any order.
 
 
 
