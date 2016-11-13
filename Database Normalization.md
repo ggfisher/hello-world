@@ -145,4 +145,12 @@ _EP3 relation_
 |_**Pnumber**_|Pname|Plocation
 |---|---|---|
 
+##Third Normal Form
+
+__Definition.__ According to Codd’s original definition, a relation schema R is in 3NF if it satisfies 2NF and no nonprime attribute of R is transitively dependent on the primary key.
+
+Third normal form (3NF) is based on the concept of transitive dependency. A functional dependency X → Y in a relation schema R is a __transitive dependency__ if there exists a set of attributes Z in R that is neither a candidate key nor a subset of any key of R, and both X→Z and Z→Y hold.  The dependency Ssn → Dmgr_ssn is transitive through Dnumber in EMP_DEPT in Figure 15.3(a), because both the dependencies Ssn → Dnumber and Dnumber → Dmgr_ssn hold and Dnumber is neither a key itself nor a subset of the key of EMP_DEPT. Intuitively, we can see that the dependency of Dmgr_ssn on Dnumber is undesirable in EMP_DEPT since Dnumber is not a key of EMP_DEPT.
+
+|Ename|_**Ssn**_|Bdate|Address|Dnumber|Dname|Dmgr_ssn|
+|---|---|---|---|---|---|---|
 
