@@ -31,7 +31,7 @@ __Definition__. A functional dependency, denoted by X → Y, between two sets of
 
 Thus, X functionally determines Y in a relation schema R if, and only if, whenever two tuples of r(R) agree on their X-value, they must necessarily agree on their Y value.
 
-Consider the following schema - with the combination of Ssn and Pnumber being the primary key:
+Consider the following schema - with the combination of __Ssn__ and __Pnumber__ being the primary key:
 
 |_**Ssn**_|_**Pnumber**_|Hours|Ename|Pname|Plocation|
 |---|---|---|---|---|---|
@@ -42,7 +42,7 @@ and assume that the following functional dependencies hold:
 - Pnumber →{Pname,Plocation} 
 - {Ssn,Pnumber}→Hours
 
-These functional dependencies specify that (a) the value of an employee’s Social Security number (Ssn) uniquely determines the employee name (Ename), (b) the value of a project’s number (Pnumber) uniquely determines the project name (Pname) and location (Plocation), and (c) a combination of Ssn and Pnumber values uniquely determines the number of hours the employee currently works on the project per week (Hours).Alternatively,we say that Ename is functionally determined by (or functionally dependent on) Ssn, or given a value of Ssn, we know the value of Ename, and so on. 
+These functional dependencies specify that (a) the value of an employee’s Social Security number (Ssn) uniquely determines the employee name (Ename), (b) the value of a project’s number (Pnumber) uniquely determines the project name (Pname) and location (Plocation), and (c) a combination of Ssn and Pnumber values uniquely determines the number of hours the employee currently works on the project per week (Hours). Alternatively,we say that Ename is functionally determined by (or functionally dependent on) Ssn, or given a value of Ssn, we know the value of Ename, and so on. 
 
 ##Normalization of Relations
 
