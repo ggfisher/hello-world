@@ -151,6 +151,25 @@ __Definition.__ According to Codd’s original definition, a relation schema R i
 
 Third normal form (3NF) is based on the concept of transitive dependency. A functional dependency X → Y in a relation schema R is a __transitive dependency__ if there exists a set of attributes Z in R that is neither a candidate key nor a subset of any key of R, and both X→Z and Z→Y hold.  The dependency Ssn → Dmgr_ssn is transitive through Dnumber in EMP_DEPT in Figure 15.3(a), because both the dependencies Ssn → Dnumber and Dnumber → Dmgr_ssn hold and Dnumber is neither a key itself nor a subset of the key of EMP_DEPT. Intuitively, we can see that the dependency of Dmgr_ssn on Dnumber is undesirable in EMP_DEPT since Dnumber is not a key of EMP_DEPT.
 
+_EMP_DEPT relation_
+
 |Ename|_**Ssn**_|Bdate|Address|Dnumber|Dname|Dmgr_ssn|
 |---|---|---|---|---|---|---|
+
+- __FD1__ Ssn → Ename, Bdate, Address, Dnumber
+- __FD2__ Dnumber → Dname, Dmgr_ssn
+
+The relation schema EMP_DEPT is in 2NF,since no partial dependencies on a key exist. However, EMP_DEPT is not in 3NF because of the transitive dependency of Dmgr_ssn (and also Dname) on Ssn via Dnumber. We can normalize EMP_DEPT by decomposing it into the two 3NF relation schemas ED1 and ED2 shown below:
+
+_ED1 relation_
+
+|Ename|_**Ssn**_|Bdate|Address|Dnumber|
+|---|---|---|---|---|
+
+_ED2 relation_
+
+|Dnumber|Dname|Dmgr_ssn|
+|---|---|---|
+
+Intuitively,we see that ED1and ED2 represent independent entity facts about employees and departments. A NATURAL JOIN operation on ED1 and ED2 will recover the original relation EMP_DEPT without generating spurious tuples.
 
