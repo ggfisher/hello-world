@@ -36,9 +36,9 @@ Consider the following schema:
 
 we know that the following functional dependencies should hold:
 
-a. Ssn→Ename 
-b. Pnumber →{Pname,Plocation} 
-c. {Ssn,Pnumber}→Hours
+- a. Ssn→Ename 
+- b. Pnumber →{Pname,Plocation} 
+- c. {Ssn,Pnumber}→Hours
 
 These functional dependencies specify that (a) the value of an employee’s Social Security number (Ssn) uniquely determines the employee name (Ename), (b) the value of a project’s number (Pnumber) uniquely determines the project name (Pname) and location (Plocation), and (c) a combination of Ssn and Pnumber values uniquely determines the number of hours the employee currently works on the project per week (Hours).Alternatively,we say that Ename is functionally determined by (or functionally dependent on) Ssn, or given a value of Ssn, we know the value of Ename, and so on. 
 
