@@ -36,7 +36,7 @@ Consider the following schema:
 |_**Ssn**_|_**Pnumber**_|Hours|Ename|Pname|Plocation|
 |---|---|---|---|---|---|
 
-and assume that following functional dependencies should hold:
+and assume that the following functional dependencies hold:
 
 - Ssn→Ename 
 - Pnumber →{Pname,Plocation} 
