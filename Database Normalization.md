@@ -76,9 +76,17 @@ This relation is not in 1NF due to the violation of the requirement for atomic v
 
 |Dname|_**Dnumber**_|Dmgr_ssn|
 |---|---|---|
+|Research|5|333445555|
+|Administration|4|987654321|
+|Headquarters|1|888665555|
 
 |_**Dnumber**_|_**Dlocations**_|
 |---|---|
+|1|Houston|
+|4|Stafford|
+|5|Bellaire|
+|5|Sugarland|
+|5|Houston|
 
 
 
