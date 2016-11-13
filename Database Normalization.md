@@ -7,6 +7,7 @@ The difference between a key and a superkey is that a key has to be minimal; tha
 
 
 |Ename|__SSn__|Bdate|Address|Dnumber|
+|---|---|---|---|---|
 
 {Ssn} is a key for EMPLOYEE, whereas {Ssn}, {Ssn, Ename}, {Ssn,Ename,Bdate},and any set of attributes that includes Ssn are all superkeys. If a relation schema has more than one key, each is called a candidate key. One of the candidate keys is arbitrarilydesignated to be the primary key,and the others are called secondary keys. In a practical relational database, each relation schema must have a primary key. If no candidate key is known for a relation, the entire relation can be treated as a default superkey. In Figure 15.1, {Ssn} is the only candidate key for EMPLOYEE,so it is also the primary key. 
 
