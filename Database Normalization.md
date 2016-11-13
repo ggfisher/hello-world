@@ -16,4 +16,4 @@ An attribute of relation schema R is called a __prime attribute__ of R if it is 
 is called __nonprime__ if it is not a prime attribute—that is, if it is not a member of any candidate key.
 
 
-__underline__
+_underline_
