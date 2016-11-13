@@ -53,6 +53,6 @@ The process of normalization through decomposition must also confirm the existen
 
 - The dependency preservation property, which ensures that each functional dependency is represented in some individual relation resulting after decomposition. 
 
-
+##First Normal Form
 
 
