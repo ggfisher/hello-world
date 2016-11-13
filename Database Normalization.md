@@ -177,6 +177,19 @@ Intuitively, we see that ED1and ED2 represent independent entity facts about emp
 
 ### _General Definitions of Second Normal Forms_
 
+__Definition__  A relation schema R is in second normal form (2NF) if every nonprime attribute A in R is not partially dependent on any key of R.
+
+The test for 2NF involves testing for functional dependencies whose left-hand side attributes are part of the primary key. If the primary key contains a single attribute, the test need not be applied at all.
+
+Consider the following relationship schema which describes parcels of land for sale in various counties of a state:
+
+|_**Property_id**_|County_name|Lot#|Area|Price|Tax_rate|
+|---|---|---|---|---|---|
+
+
+
+
+
 ### _General Definitions of Third Normal Forms_
 
 
