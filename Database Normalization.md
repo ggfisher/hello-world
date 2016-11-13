@@ -285,7 +285,7 @@ _LOTS1AY relation_
 
 The formal definition of BCNF differs from the definition of 3NF in that condition (b) of 3NF, which allows A to be prime, is absent from BCNF. That makes BCNF a stronger normal form compared to 3NF. In our example, FD5 violates BCNF in LOTS1A because AREA is not a superkey of LOTS1A. Note that FD5 satisfies 3NF in LOTS1A because County_name is a prime attribute (condition b), but this condition does not exist in the definition of BCNF. We can decompose LOTS1Ainto two BCNF relations LOTS1AX and LOTS1AY as shown above. This decomposition loses the functional dependency FD2 because its attributes no longer coexist in the same relation after decomposition.
 
-In practice,most relation schemas that are in 3NF are also in BCNF.Only if X → A holds in a relation schema R with X not being a superkey and A being a prime attribute will R be in 3NF but not in BCNF. The relation schema R shown below illustrates the general case of such a relation.
+In practice, most relation schemas that are in 3NF are also in BCNF. Only if X → A holds in a relation schema R with X not being a superkey and A being a prime attribute will R be in 3NF but not in BCNF. The relation schema R shown below illustrates the general case of such a relation.
 
 |_**A**_|_**B**_|C|
 |---|---|---|
