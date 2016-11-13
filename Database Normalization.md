@@ -32,6 +32,7 @@ Thus, X functionally determines Y in a relation schema R if, and only if, whenev
 Consider the following schema:
 
 |_**Ssn**_|_**Pnumber**_|Hours|Ename|Pname|Plocation|
+|---|---|---|---|---|---|
 
 we know that the following functional dependencies should hold:
 
