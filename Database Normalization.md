@@ -17,5 +17,5 @@ is called __nonprime__ if it is not a prime attribute—that is, if it is not a 
 
 In the following schema, both Ssn and Pnumber are prime attributes of WORKS_ON, whereas other attributes of WORKS_ON are nonprime:
 
-|_**Ssn*__|__*Pnumber*__|Hours|
+|__**Ssn**__|__**Pnumber**__|Hours|
 |---|---|---|
