@@ -183,7 +183,7 @@ The test for 2NF involves testing for functional dependencies whose left-hand si
 
 Consider the following relationship schema which describes parcels of land for sale in various counties of a state:
 
-|_**Property_id**_|County_name|Lot#|Area|Price|Tax_rate|
+|_**Property_id**_|*County_name*|*Lot#*|Area|Price|Tax_rate|
 |---|---|---|---|---|---|
 
 
