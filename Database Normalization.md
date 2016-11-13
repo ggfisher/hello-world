@@ -6,7 +6,7 @@ Definition. A superkey of a relation schema R = {A1, A2, ... , An} is a set of a
 The difference between a key and a superkey is that a key has to be minimal; that is, if we have a key K = {A1,A2,...,Ak} of R,then K – {Ai} is not a key of R for any Ai,1 ≤ i ≤ k. In the following schema, 
 
 
-|Ename|__**SSn**__|Bdate|Address|Dnumber|
+|Ename|SSn|Bdate|Address|Dnumber|
 |---|---|---|---|---|
 
 {Ssn} is a key for EMPLOYEE, whereas {Ssn}, {Ssn, Ename}, {Ssn,Ename,Bdate},and any set of attributes that includes Ssn are all superkeys. If a relation schema has more than one key, each is called a candidate key. One of the candidate keys is arbitrarilydesignated to be the primary key,and the others are called secondary keys. In a practical relational database, each relation schema must have a primary key. If no candidate key is known for a relation, the entire relation can be treated as a default superkey. In Figure 15.1, {Ssn} is the only candidate key for EMPLOYEE,so it is also the primary key. 
