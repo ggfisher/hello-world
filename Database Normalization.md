@@ -93,7 +93,7 @@ _DEPT_LOCATIONS snapshot_
 |5|Sugarland|
 |5|Houston|
 
-A distinct tuple in DEPT_LOCATIONS exists for each location of a department.This decomposes the non-1NF relation into two 1NF relations.
+A distinct tuple in DEPT_LOCATIONS exists for each location of a department. This decomposes the non-1NF relation into two 1NF relations.
 
 2. Expand the key so that there will be a separate tuple in the original __DEPARTMENT__ relation for each location of a __DEPARTMENT__, as shown below. In this case, the primary key becomes the combination {Dnumber, Dlocation}. This solution has the disadvantage of introducing redundancy in the relation. 
 
