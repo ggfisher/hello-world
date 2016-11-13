@@ -57,10 +57,20 @@ The process of normalization through decomposition must also confirm the existen
 
 It states that the domain of an attribute must include only atomic(simple,indivisible) valuesand that the value of any attribute in a tuple must be a single value from the domain of that attribute.
 
-Consider the following schema:
+Consider the following schema for a relation called __Department__:
 
 |Dname|_**Dnumber**_|Dmgr_ssn|Dlocations|
 |---|---|---|---|
+
+and sample state of relation __Department__
+
+|Dname|_**Dnumber**_|Dmgr_ssn|Dlocations|
+|---|---|---|---|
+|Research|5|333445555|{Bellaire,Sugarland,Houston}|
+|Administration|4|987654321|{Stafford}|
+|Headquarters|1|888665555|{Houston}|
+
+
 
 
 
