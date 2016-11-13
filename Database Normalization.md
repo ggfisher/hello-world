@@ -41,7 +41,9 @@ c. {Ssn,Pnumber}→Hours
 
 These functional dependencies specify that (a) the value of an employee’s Social Security number (Ssn) uniquely determines the employee name (Ename), (b) the value of a project’s number (Pnumber) uniquely determines the project name (Pname) and location (Plocation), and (c) a combination of Ssn and Pnumber values uniquely determines the number of hours the employee currently works on the project per week (Hours).Alternatively,we say that Ename is functionally determined by (or functionally dependent on) Ssn, or given a value of Ssn, we know the value of Ename, and so on. 
 
+##Normalization of Relations
 
+Normalization of data can be considered a process of analyzing the given relation schemas based on their FDs and primary keys to achieve the desirable properties of (1) minimizing redundancy and (2) minimizing the insertion,deletion,and update anomalies
 
 
 
