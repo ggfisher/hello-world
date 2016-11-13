@@ -55,4 +55,12 @@ The process of normalization through decomposition must also confirm the existen
 
 ##First Normal Form
 
+It states that the domain of an attribute must include only atomic(simple,indivisible) valuesand that the value of any attribute in a tuple must be a single value from the domain of that attribute.
+
+Consider the following schema:
+
+|Dname|_**Dnumber**_|Dmgr_ssn|Dlocations|
+|---|---|---|---|
+
+
 
