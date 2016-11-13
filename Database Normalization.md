@@ -106,5 +106,22 @@ __1NF of DEPARTMENT Relation__
 |Administration|4|987654321|Stafford|
 |Headquarters|1|888665555|Houston|
 
+##Second Normal Form
+
+Second normal form (2NF) is based on the concept of full functional dependency. A functional dependency X → Y is a __full functional dependency__ if removal of any attribute A from X means that the dependency does not hold any more. A functional dependency X→Y is a __partial dependency__ if some attribute A ε X can be removed from X and the dependency still holds.  In the EMP_PROJ relation below,
+
+_EMP_PROJ relation_
+
+|_**Ssn**_|_**Pnumber**_|Hours|Ename|Pname|Plocation|
+|---|---|---|---|---|---|
+
+_EMP_PROJ relation functional dependencies:_
+
+- __FD1__ {Ssn,Pnumber} → Hours
+- __FD2__ Ssn → Ename 
+- __FD3__ Pnumber → {Pname,Plocation} 
 
 
+{Ssn, Pnumber} → Hours is a full dependency (neither Ssn → Hours nor Pnumber → Hours holds). However, the dependency {Ssn, Pnumber} → Ename is partial because Ssn → Ename holds.
+
+The test for 2NF involves testing for functional dependencies whose left-hand side attributes are part of the primary key.If the primary key contains a single attribute, the test need not be applied at all. The EMP_PROJ relation is in 1NF but is not in 2NF. The nonprime attribute Ename violates 2NF because of FD2, as do the nonprime attributes Pname and Plocation because of FD3. The functional dependencies FD2 and FD3 make Ename, Pname, and Plocation partially dependent on the primary key {Ssn,Pnumber} of EMP_PROJ,thus violating the 2NF test.
