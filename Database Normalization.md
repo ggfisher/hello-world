@@ -27,3 +27,7 @@ A functional dependency is a constraint between two sets of attributes from the 
 
 __Definition__. A functional dependency, denoted by X → Y, between two sets of attributes X and Y that are subsets of R specifies a constraint on the possible tuples that can form a relation state r of R. The constraint is that, for any two tuples t1 and t2 in r that have t1[X] = t2[X], they must also have t1[Y] = t2[Y]. This means that the values of the Y component of a tuple in r depend on, or are determined by, the values of the Xcomponent; alternatively, the values of the Xcomponent of a tuple uniquely (or __functionally__) determine the values of the Y component. We also say that there is a functional dependency from X to Y, or that Y is functionally dependentonX.The abbreviation for functional dependency is FD or f.d. The set of attributes X is called the __left-hand side__ of the FD, and Y is called the __right-hand side__.
 
+Thus, X functionally determines Y in a relation schema R if, and only if, whenever two tuples of r(R) agree on their X-value, they must necessarily agree on their Y value.
+
+
+
