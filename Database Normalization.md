@@ -47,9 +47,9 @@ Normalization of data can be considered a process of analyzing the given relatio
 
 The process of normalization through decomposition must also confirm the existence of additional properties that the relational schemas, taken together, should possess. These would include two properties: 
 
-- The nonadditive join or lossless join property, which guarantees that the spurious tuple generation problem discussed in Section 15.1.4 does not occur with respect to the relation schemas created after decomposition. 
+- The nonadditive join or lossless join property, which guarantees that the spurious tuple generation problem does not occur with respect to the relation schemas created after decomposition. 
 
-- The dependency preservation property,which ensures that each functional dependency is represented in some individual relation resulting after decomposition. 
+- The dependency preservation property, which ensures that each functional dependency is represented in some individual relation resulting after decomposition. 
 
 
 
