@@ -235,7 +235,7 @@ _LOTS1B relation_
 |---|---|
 
 
-We construct LOTS1A by removing the attribute Price that violates 3NF from LOTS1 and placing it with Area (the lefthand side of FD4 that causes the transitive dependency) into another relation LOTS1B.Both LOTS1A and LOTS1B are in 3NF. 
+We construct LOTS1A by removing the attribute Price that violates 3NF from LOTS1 and placing it with Area (the lefthand side of FD4 that causes the transitive dependency) into another relation LOTS1B. Both LOTS1A and LOTS1B are in 3NF. 
 
 Two points are worth noting about this example and the general definition of 3NF: 
 
@@ -246,7 +246,7 @@ Two points are worth noting about this example and the general definition of 3NF
 
 A relation schema R __violates 3NF__ if a functional dependency X → A holds in R that does not meet either condition—meaning that it violates both conditions (a) and (b) of 3NF. This can occur due to two types of problematic functional dependencies: 
 
-- A nonprime attribute determines another nonprime attribute.Here we typically have a transitive dependency that violates 3NF. 
+- A nonprime attribute determines another nonprime attribute. Here we typically have a transitive dependency that violates 3NF. 
 - A proper subset of a key of R functionally determines a nonprime attribute. Here we have a partial dependency that violates 3NF (and also 2NF).
 
 A relation schema R __is in 3NF__ if every nonprime attribute of R meets both of the following conditions:
