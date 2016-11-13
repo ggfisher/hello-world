@@ -242,6 +242,16 @@ Two points are worth noting about this example and the general definition of 3NF
 - LOTS1 violates 3NF because Price is transitively dependent on each of the candidate keys of LOTS1 via the nonprime attribute Area.
 - This general definition can be applied directly to test whether a relation schema is in 3NF; it does not have to go through 2NF first. If we apply the above 3NF definition to LOTS with the dependencies FD1 through FD4, we find that both FD3 and FD4 violate 3NF. Therefore, we could decompose LOTS into LOTS1A, LOTS1B, and LOTS2 directly. Hence, the transitive and partial dependencies that violate 3NF can be removed in any order.
 
+###Interpreting the General Definition of Third Normal Form
 
+A relation schema R __violates 3NF__ if a functional dependency X → A holds in R that does not meet either condition—meaning that it violates both conditions (a) and (b) of 3NF. This can occur due to two types of problematic functional dependencies: 
+
+- A nonprime attribute determines another nonprime attribute.Here we typically have a transitive dependency that violates 3NF. 
+- A proper subset of a key of R functionally determines a nonprime attribute. Here we have a partial dependency that violates 3NF (and also 2NF).
+
+A relation schema R __is in 3NF__ if every nonprime attribute of R meets both of the following conditions:
+
+- It is fully functionally dependent on every key of R. 
+- It is nontransitively dependent on every key of R.
 
 ##Boyce-Codd Normal Form
