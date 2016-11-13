@@ -183,8 +183,36 @@ The test for 2NF involves testing for functional dependencies whose left-hand si
 
 Consider the following relationship schema which describes parcels of land for sale in various counties of a state:
 
+_LOTS relation_
+
 |*Property_id*|_**County_name**_|_**Lot#**_|Area|Price|Tax_rate|
 |---|---|---|---|---|---|
+
+Suppose that there are two candidate keys: Property_id# and {County_name, Lot#}; that is, lot numbers are unique only within each county, but Property_id# numbers are unique across counties for the entire state.
+
+_LOTS relation functional dependencies:_
+
+- __FD1__ Property_id → County_name, Lot#, Area, Price, Tax_rate
+- __FD2__ County_name → Property_id, Lot#, Area, Price, Tax_rate 
+- __FD3__ County_name → Tax_rate
+- __FD4__ Area → Price
+
+Based on the two candidate keys Property_id# and {County_name, Lot#}, the functional dependencies FD1 and FD2 hold. Property_id is chosen as the primary key, but no special consideration will be given to this key over the other candidate key.
+
+The dependency FD3 says that the tax rate is fixed for a given county (does not vary lot by lot within the same county), while FD4 says that the price of a lot is determined by its area regardless of which county it is in.
+
+The LOTS relation schema violates the general definition of 2NF because Tax_rate is partially dependent on the candidate key {County_name, Lot#}, due to FD3. To normalize LOTS into 2NF, we decompose it into the two relations LOTS1 and LOTS2, as shown below:
+
+_LOTS1 relation_
+
+|_**Property_id**_|County_name|Lot#|Area|Price|
+|---|---|---|---|---|
+
+_LOTS2 relation_
+
+|_**County_name**_|Tax_rate|
+|---|---|
+
 
 
 
