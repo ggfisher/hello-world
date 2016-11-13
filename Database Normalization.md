@@ -171,5 +171,5 @@ _ED2 relation_
 |Dnumber|Dname|Dmgr_ssn|
 |---|---|---|
 
-Intuitively,we see that ED1and ED2 represent independent entity facts about employees and departments. A NATURAL JOIN operation on ED1 and ED2 will recover the original relation EMP_DEPT without generating spurious tuples.
+Intuitively, we see that ED1and ED2 represent independent entity facts about employees and departments. A NATURAL JOIN operation on ED1 and ED2 will recover the original relation EMP_DEPT without generating spurious tuples.
 
