@@ -219,8 +219,8 @@ We construct LOTS1 by removing the attribute Tax_rate that violates 2NF from LOT
 
 __Definition__ A relation schema R is in third normal form (3NF) if, whenever a nontrivial functional dependency X → A holds in R, when either:
 
-a) X is a superkey of R or
-b) A is a prime attribute of R. 
++ a) X is a superkey of R or
++ b) A is a prime attribute of R. 
 
 According to this definition, LOTS2 is in 3NF. However, FD4 in LOTS1 violates 3NF because Area is not a superkey and Price is not a prime attribute in LOTS1. To normalize LOTS1 into 3NF,we decompose it into the relation schemas LOTS1A and LOTS1B as shown below:
 
