@@ -175,9 +175,9 @@ Intuitively, we see that ED1and ED2 represent independent entity facts about emp
 
 ## General Definitions of Second and Third Normal Forms
 
-### General Definitions of Second Normal Forms
+### _General Definitions of Second Normal Forms_
 
-### General Definitions of Third Normal Forms
+### _General Definitions of Third Normal Forms_
 
 
 
