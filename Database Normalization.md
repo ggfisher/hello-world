@@ -43,7 +43,9 @@ These functional dependencies specify that (a) the value of an employee’s Soci
 
 ##Normalization of Relations
 
-Normalization of data can be considered a process of analyzing the given relation schemas based on their FDs and primary keys to achieve the desirable properties of (1) minimizing redundancy and (2) minimizing the insertion,deletion,and update anomalies
+Normalization of data can be considered a process of analyzing the given relation schemas based on their FDs and primary keys to achieve the desirable properties of (1) minimizing redundancy and (2) minimizing the insertion, deletion, and update anomalies.
+
+
 
 
 
