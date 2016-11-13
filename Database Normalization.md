@@ -173,4 +173,12 @@ _ED2 relation_
 
 Intuitively, we see that ED1and ED2 represent independent entity facts about employees and departments. A NATURAL JOIN operation on ED1 and ED2 will recover the original relation EMP_DEPT without generating spurious tuples.
 
+## General Definitions of Second and Third Normal Forms
+
+### General Definitions of Second Normal Forms
+
+### General Definitions of Third Normal Forms
+
+
+
 ##Boyce-Codd Normal Form
