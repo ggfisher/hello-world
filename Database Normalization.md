@@ -72,7 +72,15 @@ and sample state of relation __Department__:
 
 This relation is not in 1NF due to the violation of the requirement for atomic values.  There are two ways to correct this:
 
-1.
+1.  Remove the attribute Dlocations that violates 1NF and place it in a separate relation DEPT_LOCATIONS along with the primary key Dnumber of DEPARTMENT. The primary key of this relation is the combination {Dnumber, Dlocation}, as shown:
+
+|Dname|_**Dnumber**_|Dmgr_ssn|
+|---|---|---|
+
+|_**Dnumber**_|_**Dlocations**_|
+|---|---|
+
+
 
 
 
