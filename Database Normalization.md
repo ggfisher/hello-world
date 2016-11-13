@@ -74,6 +74,8 @@ This relation is not in 1NF due to the violation of the requirement for atomic v
 
 1.  Remove the attribute Dlocations that violates 1NF and place it in a separate relation DEPT_LOCATIONS along with the primary key Dnumber of DEPARTMENT. The primary key of this relation is the combination {Dnumber, Dlocation}, as shown:
 
+**Department snapshot**
+
 |Dname|_**Dnumber**_|Dmgr_ssn|
 |---|---|---|
 |Research|5|333445555|
