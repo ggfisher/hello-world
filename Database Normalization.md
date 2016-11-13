@@ -31,7 +31,7 @@ __Definition__. A functional dependency, denoted by X → Y, between two sets of
 
 Thus, X functionally determines Y in a relation schema R if, and only if, whenever two tuples of r(R) agree on their X-value, they must necessarily agree on their Y value.
 
-Consider the following schema:
+Consider the following schema - with the combination of Ssn and Pnumber being the primary key:
 
 |_**Ssn**_|_**Pnumber**_|Hours|Ename|Pname|Plocation|
 |---|---|---|---|---|---|
