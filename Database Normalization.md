@@ -3,8 +3,9 @@
 
 Definition. A superkey of a relation schema R = {A1, A2, ... , An} is a set of attributes S⊆R with the property that no two tuples t1 and t2 in any legal relation state r of R will have t1[S] = t2[S].A key K is a superkey with the additional property that removal of any attribute from K will cause K not to be a superkey any more.
 
-The difference between a key and a superkey is that a key has to be minimal; that is, if we have a key K = {A1,A2,...,Ak} of R,then K – {Ai} is not a key of R for any Ai,1 ≤ i ≤ k. In the following schema, 
+The difference between a key and a superkey is that a key has to be minimal; that is, if we have a key K = {A1,A2,...,Ak} of R,then K – {Ai} is not a key of R for any Ai,1 ≤ i ≤ k. 
 
+In the following schema, 
 
 |Ename|SSn|Bdate|Address|Dnumber|
 |---|---|---|---|---|
