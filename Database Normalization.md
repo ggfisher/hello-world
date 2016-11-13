@@ -19,3 +19,6 @@ In the following schema, both Ssn and Pnumber are prime attributes whereas the _
 
 |_**Ssn**_|_**Pnumber**_|Hours|
 |---|---|---|
+
+
+##Functional Dependencies
