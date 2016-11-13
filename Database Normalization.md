@@ -73,7 +73,7 @@ and sample state of relation __Department__:
 
 This relation is not in 1NF due to the violation of the requirement for atomic values.  There are two ways to correct this:
 
-1.  Remove the attribute Dlocations that violates 1NF and place it in a separate relation DEPT_LOCATIONS along with the primary key Dnumber of DEPARTMENT. The primary key of this relation is the combination {Dnumber, Dlocation}, as shown:
+- 1. Remove the attribute Dlocations that violates 1NF and place it in a separate relation DEPT_LOCATIONS along with the primary key Dnumber of DEPARTMENT. The primary key of this relation is the combination {Dnumber, Dlocation}, as shown:
 
 _DEPARTMENT snapshot_
 
@@ -95,7 +95,7 @@ _DEPT_LOCATIONS snapshot_
 
 A distinct tuple in DEPT_LOCATIONS exists for each location of a department. This decomposes the non-1NF relation into two 1NF relations.
 
-2. Expand the key so that there will be a separate tuple in the original __DEPARTMENT__ relation for each location of a __DEPARTMENT__, as shown below. In this case, the primary key becomes the combination {Dnumber, Dlocation}. This solution has the disadvantage of introducing redundancy in the relation. 
+- 2. Expand the key so that there will be a separate tuple in the original __DEPARTMENT__ relation for each location of a __DEPARTMENT__, as shown below. In this case, the primary key becomes the combination {Dnumber, Dlocation}. This solution has the disadvantage of introducing redundancy in the relation. 
 
 __1NF of DEPARTMENT Relation__
 
