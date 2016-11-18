@@ -160,7 +160,7 @@ _EMP_DEPT relation_
 - __FD1__ Ssn → Ename, Bdate, Address, Dnumber
 - __FD2__ Dnumber → Dname, Dmgr_ssn
 
-The relation schema EMP_DEPT is in 2NF,since no partial dependencies on a key exist. However, EMP_DEPT is not in 3NF because of the transitive dependency of Dmgr_ssn (and also Dname) on Ssn via Dnumber. We can normalize EMP_DEPT by decomposing it into the two 3NF relation schemas ED1 and ED2 shown below:
+The relation schema EMP_DEPT is in 2NF, since no partial dependencies on a key exist. However, EMP_DEPT is not in 3NF because of the transitive dependency of Dmgr_ssn (and also Dname) on Ssn via Dnumber. We can normalize EMP_DEPT by decomposing it into the two 3NF relation schemas ED1 and ED2 shown below:
 
 _ED1 relation_
 
