@@ -89,6 +89,11 @@ So in this case:
   * log<sub>100</sub> 1000 = 3  
 * Selectivity  
   * It would be **1** now since we are looking only for __*a=10*__  
+* The number of matching leaves:  
+   * Selectivity * Number of Leaves
+   * .01 * 1000 = __*10*__  
+ 
+
   
   
 
