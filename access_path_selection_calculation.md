@@ -2,9 +2,7 @@
 
 ####Given the following query:
 
-σ<sub>a>10
-  '|'
-  R
+σ<sub>a>10 - R
 
 
 
