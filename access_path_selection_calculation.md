@@ -22,9 +22,8 @@ How many pages then, do we expect to be output from this query?&nbsp;&nbsp;(.9 *
 #### Assume a primary B+ Tree index on R(a).  How many page accesses will the query cost?  
 It will be helpful to compute:  
   
-#####What is the **fanout** of this index, where fanout is the number of directory entries that can be stored in the page?  
-  
-#####**100**   
+* The **fanout** of this index, where fanout is the number of directory entries that can be stored in the page?  
+  * **100**   
   
 
 (**Q3c**) What is the height of this index?&nbsp;&nbsp;  
