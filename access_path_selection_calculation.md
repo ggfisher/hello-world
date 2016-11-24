@@ -14,7 +14,9 @@ Assume we have the following indexes:
 B+ Tree(a,b)&nbsp;&nbsp;&nbsp;&nbsp; Hash(a)&nbsp;&nbsp;&nbsp;&nbsp; B+ Tree(a)
 
 (Q1) Assume you want to do a file scan - how much does the file scan access path cost?  In other words, how many pages, worth of units, does it take, to execute this using a file scan?    
-(A1) 10,000 pages because we have to read every page of **R**.
+(A1) 10,000 pages because we have to read every page of **R** and since we are doing pipeline execution, the cost is the size of **R**.  
+
+
 
 
 
