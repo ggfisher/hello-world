@@ -88,7 +88,7 @@ So in this case:
 * Number of leaves in the tree  
   * It is still 1000 as previously calculated
 * The height of the tree:
-  * log<sub>100</sub> 1000 = __*2*__ __**(Actually 1.5 but we round up)**__
+  * log<sub>100</sub> 1000 = __*2*__ __*(Actually 1.5 but we round up)*__
 * Selectivity  
   * It would be **1** now since we are looking only for __*a=10*__  and we are assuming a normal distribution.   
 * The number of matching leaves:  
@@ -96,5 +96,5 @@ So in this case:
 * Number of Page accesses do we need to access the record:  
   * 10 * 100 = 1000  
 * __**Final Calculation.**__  
-So the total cost is the height of the tree + Number of matching leaves + the number of disk accesses:  
+So the total cost is the height of the tree + number of matching leaves + the number of disk accesses:  
      * 2 + 10 + 1000 = 1012  
