@@ -36,6 +36,9 @@ __*Note: &nbsp;Since this is a primary index, the root node of the tree, and the
   
 
 (**Q4**) How much does it cost to do the secondary scan?  
+__*Note: &nbsp;An important distinction between a secondary index and a primary index is that the lowest layer of the tree does not contain the actual data as it did in the primary index.  Instead, it contains pointers to data on disk.*__  
+  
+Some additional information and explanation is needed to calculate the cost in this scenario.  
 
 
 
