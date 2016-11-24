@@ -53,7 +53,7 @@ __*Note: &nbsp;In this type of index, at the leaf node of the index, you have on
 (**A4a**) In order to get to the starting page, we need to do two accesses, and then you are where you need to start.  We then need to scan the number of leaf pages.  How many do we need to scan?  It is determined by taking the product of the __**selectivity**__ and the number of pages which would be __**0.9 X 1000 = 900**__.  So we have to scan 900 leaf pages, and each leaf page contains 100 pointers and each of these pointers take one page access. So we need __**900 X 100 = 90,000 page accesses**__  
 So the total cost is  
 __**2**__ accesses to go through the index  
-__**900**__ to scan the leaf nodes  
+__**900**__ accesses to scan the leaf nodes  
 __**90,000**__ accesses to read the data from disk.  
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__**2 + 900 + 90,000**__  
