@@ -6,7 +6,7 @@
 
 Assume we have the following indexes:
 
-B+ Tree(a,b)&nbsp&nbsp&nbsp Hash(a)&nbsp&nbsp&nbsp B+ Tree(a)
+B+ Tree(a,b)&nbsp;&nbsp;&nbsp;&nbsp; Hash(a)&nbsp;&nbsp;&nbsp;&nbsp; B+ Tree(a)
 
 
 
