@@ -88,7 +88,7 @@ So in this case:
 * Number of leaves in the tree  
   * It is still 1000 as previously calculated
 * The height of the tree:
-  * log<sub>100</sub> 1000 = 2  
+  * log<sub>100</sub> 1000 = 2 (Actually 1.5 but we round up)  
 * Selectivity  
   * It would be **1** now since we are looking only for __*a=10*__  and we are assuming a normal distribution.   
 * The number of matching leaves:  
