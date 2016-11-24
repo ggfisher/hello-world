@@ -46,7 +46,7 @@ __*Note: &nbsp;The reason for this is that, whereas the Primary Index had 10,000
 (**Q4c**) How many tuples are there in the relation?  
 (**A4c**) 10,000 pages X 10 tuples/page = __**100,000**__   
 (**Q4d**) So how many leaf pages do we need to have to contain 100,000 directory entries?  
-(**A4d**)  We need to calculate #tuples/Date Entries per page = 100,000/100 = __**100**__.  
+(**A4d**)  We need to calculate #tuples/Date Entries per page = 100,000/100 = __**1000**__.  
 __*Note: &nbsp;In this type of index, at the leaf node of the index, you have one directoy entry for every tuple on disk.__  
 
 
