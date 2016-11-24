@@ -77,8 +77,11 @@ __*Note: &nbsp;For a secondary B+ Tree, there are few factors that we need to co
 
 * The height of the tree which equal to:  
    * log<sub>fanout</sub> X Number of Leaves  
-   * Number of matching leaves  
-   * Matching leaves X Directory Entries (DE)/ Page
+* Number of leaves in the tree  
+* Number of matching leaves  
+* Matching leaves X Directory Entries (DE)/ Page  
+   
+So in this case, nothing has changed from the previous calculations.
    
    
    
