@@ -23,8 +23,7 @@ How many pages then, do we expect to be output from this query?&nbsp;&nbsp;(.9 *
 It will be helpful to compute:  
   
 * The **fanout** of this index, where fanout is the number of directory entries that can be stored in the page?  
-  * **100**   
-  
+  * Number of Directory Entries (DE)/page = 100  
 
 * What is the height of this index?&nbsp;&nbsp;  
   * Since each Directory node has 100 children, how many levels do we need in the tree, in order to index 10,000 pages?   (100&nbsp;X&nbsp;100&nbsp;) = 10,000 so the height of the tree is **2**&nbsp;&nbsp;&nbsp;**(log<sub>100</sub>&nbsp;10,000=2)**.  
@@ -39,19 +38,20 @@ __*Note: &nbsp;Since this is a primary index, the root node of the tree, and the
 
 __*Note: &nbsp;An important distinction between a secondary index and a primary index is that the lowest layer of the tree in a secondary index does not contain the actual tuples of data as it did in the primary index.  Instead, it contains pointers to data on disk.*__  
   
-Some additional information and explanation is needed to calculate the cost in this scenario.  
+It will be helpful to compute:  
 
-(**Q4b**) How many leaf pages do we have in a secondary index?  
-(**A4b**) The answer is __**1,000**__.  
+* How many leaf pages do we have in a secondary index?  
+*  The answer is __**1,000**__.  
+
 __*Note: &nbsp;The reason for this is that, whereas the Primary Index had 10,000 leaf pages, it stored actual tuples.  For this secondary index we can store 10 times as much information in the leaf pages since we know that Data Entries are smaller than tuples by a factor of 10.  What this means is that we need a factor of 10 fewer leaf nodes to index the data on disk.  Another way of saying this, is that for the secondary index, we can store 10 times the number of data entries for each leaf page in the secondary index.__  
-(**Q4c**) How many tuples are there in the relation?  
-(**A4c**) 10,000 pages X 10 tuples/page = __**100,000**__   
-(**Q4d**) So how many leaf pages do we need to have to contain 100,000 directory entries?  
-(**A4d**)  We need to calculate #tuples/Date Entries per page = 100,000/100 = __**1000**__.  
+* How many tuples are there in the relation?  
+*  10,000 pages X 10 tuples/page = __**100,000**__   
+* How many leaf pages do we need to have to contain 100,000 directory entries?  
+*  We need to calculate #tuples/Date Entries per page = 100,000/100 = __**1000**__.  
 __*Note: &nbsp;In this type of index, at the leaf node of the index, you have one directoy entry for every tuple on disk.  So in this secondary index, you only need 1000 leaf nodes in order to be able to access the 100,000 tuples on disk.__  
-(**Q4e**) So in this case, what is the height of the tree?  
-(**A4e**) At the leaf node, we have 1000 pages.  So how many pages above the leaf node do we need to access these 1000 pages?  We need 10 since each page of Directory Entries can hold 100 pointers - 1000/100 = 10.  And now we need the root node to be able to access these 10 pages, so there are _**3**_ levels to the Secondary Index B+ Tree.  
-(**A4a**) In order to get to the starting page, we need to do two accesses, and then you are where you need to start.  We then need to scan the number of leaf pages.  How many do we need to scan?  It is determined by taking the product of the __**selectivity**__ and the number of pages which would be __**0.9 X 1000 = 900**__.  So we have to scan 900 leaf pages, and each leaf page contains 100 pointers and each of these pointers take one page access. So we need __**900 X 100 = 90,000 page accesses**__  
+* What is the height of the tree?  
+*  At the leaf node, we have 1000 pages.  So how many pages above the leaf node do we need to access these 1000 pages?  We need 10 since each page of Directory Entries can hold 100 pointers - 1000/100 = 10.  And now we need the root node to be able to access these 10 pages, so there are _**3**_ levels to the Secondary Index B+ Tree.  
+* __**Fianal Calculation.**__  In order to get to the starting page, we need to do two accesses, and then you are where you need to start.  We then need to scan the number of leaf pages.  How many do we need to scan?  It is determined by taking the product of the __**selectivity**__ and the number of pages which would be __**0.9 X 1000 = 900**__.  So we have to scan 900 leaf pages, and each leaf page contains 100 pointers and each of these pointers take one page access. So we need __**900 X 100 = 90,000 page accesses**__  
 So the total cost is  
 __**2**__ accesses to go through the index  
 __**900**__ accesses to scan the leaf nodes  
