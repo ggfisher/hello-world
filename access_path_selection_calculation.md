@@ -1,8 +1,7 @@
 ###Access Path Selection Calculation
 
-####Given the following query (select a>10 from relation ***R***):
+#### Suppose we run select a>10 from relation ***R***
 
-σ<sub>a>10 - R
 
 |R| = 10,000 (the size of the relation in pages)  
 Each Page Contains 100 bytes  
