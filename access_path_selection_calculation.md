@@ -73,6 +73,6 @@ Given this information, and assuming uniform distrubtion, what is the **selectiv
 
 ### Assume only a secondary B+-tree on R(a) How many page accesses will the query cost?  
   
-__*Note: &nbsp;For a secondary B+ Tree, we need to compute __
+__*Note: &nbsp;For a secondary B+ Tree, we need to compute__
 
 
