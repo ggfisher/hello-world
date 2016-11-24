@@ -17,7 +17,7 @@ How many pages then, do we expect to be output from this query?&nbsp;&nbsp;(.9 *
   
 ### Assume we are considering the hash index **Hash(a)** - how much does it cost for a hash index?  
   
-10,000 beause a hash index is only good for equalities so we have to scan anyway.  
+10,000 beause a hash index is only good for equalities so we have to scan all pages.  
   
 ### Assume a primary B+ Tree index on R(a).  How many page accesses will the query cost?  
 It will be helpful to compute:  
