@@ -23,7 +23,7 @@ B+ Tree(a)&nbsp;&nbsp;Secondary Index&nbsp;&nbsp;&nbsp;&nbsp; Hash(a)&nbsp;&nbsp
 (**Q2**) Now assume we are considering the hash index **Hash(a)** - how much does it cost for a hash index?  
 (**A2**) 10,000 beause a hash index is only good for equalities so we have to scan anyway.  
 
-(**Q3a**) What is the cost to use the B+ Tree Primary Index?  
+(**Q3a**) Assume a primary B+ Tree index on R(a).  How many page accesses will the query cost?
 (**Q3b**) What is the **fanout** of this index?&nbsp;&nbsp;  
 (**A3b**) **100**   
 (**Q3c**) What is the height of this index?&nbsp;&nbsp;  
@@ -34,7 +34,8 @@ __*Note: &nbsp;Since this is a primary index, the root node of the tree, and the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**log<sub>100</sub>&nbsp;10,000 + 9,000**  
   
 
-(**Q4a**) How much does it cost to do the secondary scan?  
+(**Q4a**) Assume only a secondary B+-tree on R(a) How many page accesses will the query cost? 
+
 __*Note: &nbsp;An important distinction between a secondary index and a primary index is that the lowest layer of the tree in a secondary index does not contain the actual tuples of data as it did in the primary index.  Instead, it contains pointers to data on disk.*__  
   
 Some additional information and explanation is needed to calculate the cost in this scenario.  
@@ -56,31 +57,5 @@ __**900**__ accesses to scan the leaf nodes
 __**90,000**__ accesses to read the data from disk.  
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__**2 + 900 + 90,000**__  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
