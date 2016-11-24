@@ -80,7 +80,8 @@ __*Note: &nbsp;For a secondary B+ Tree, there are few factors that we need to co
    * log<sub>fanout</sub> X Number of Leaves    
 * Number of matching leaves 
   * Selectivity * Number of Leaves
-* Matching leaves X Directory Entries (DE)/ Page  
+* Number of Page accesses do we need to access the record:  
+   *  Matching leaves X Directory Entries (DE)/ Page  
 * Selectivity  
   
 So in this case:  
@@ -89,7 +90,7 @@ So in this case:
 * The height of the tree:
   * log<sub>100</sub> 1000 = 3  
 * Selectivity  
-  * It would be **1** now since we are looking only for __*a=10*__  
+  * It would be **1** now since we are looking only for __*a=10*__  and we are assuming a normal distribution.   
 * The number of matching leaves:  
    * .01 * 1000 = __*10*__  
 
