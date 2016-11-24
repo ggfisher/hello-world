@@ -45,6 +45,9 @@ Some additional information and explanation is needed to calculate the cost in t
 __*Note: &nbsp;The reason for this is that, whereas the Primary Index had 10,000 leaf pages, it stored actual tuples.  For this secondary index we can store 10 times as much information in the leaf pages since we know that Data Entries are smaller than tuples by a factor of 10.  What this means is that we need a factor of 10 fewer leaf nodes to index the data on disk.  Another way of saying this, is that for the secondary index, we can store 10 times the number of data entries for each leaf page in the secondary index.__  
 (**Q4c**) How many tuples are there in the relation?  
 (**A4c**) 10,000 pages X 10 tuples/page = 100,000  
+(**Q4d**) So how many leaf pages do we need to have to contain 100,000 directory entries?  
+(**A4d**)  Since each page can contain 100 directory entries, we need 100,000/100 = __**100**__ pages.  
+
 
 
 
