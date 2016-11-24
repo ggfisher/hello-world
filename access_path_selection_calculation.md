@@ -76,7 +76,7 @@ Given this information, and assuming uniform distrubtion, what is the **selectiv
 __*Note: &nbsp;For a secondary B+ Tree, there are a couple of factors that we need to compute, the height of the tree, and the number of leaf pages do we have to read.__
 
 * The height of the tree which equal to:  
-   * log</sub>fanout<sub> X Number of Leaves  
+   * log<sub>fanout</sub> X Number of Leaves  
    
 
 
