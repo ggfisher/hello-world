@@ -78,7 +78,8 @@ __*Note: &nbsp;For a secondary B+ Tree, there are few factors that we need to co
 * Number of leaves in the tree  
 * The height of the tree which is equal to:  
    * log<sub>fanout</sub> X Number of Leaves    
-* Number of matching leaves  
+* Number of matching leaves 
+  * Selectivity * Number of Leaves
 * Matching leaves X Directory Entries (DE)/ Page  
 * Selectivity  
   
@@ -90,8 +91,8 @@ So in this case:
 * Selectivity  
   * It would be **1** now since we are looking only for __*a=10*__  
 * The number of matching leaves:  
-   * Selectivity * Number of Leaves
    * .01 * 1000 = __*10*__  
+
  
 
   
