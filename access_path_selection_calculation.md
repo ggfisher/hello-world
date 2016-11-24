@@ -72,4 +72,7 @@ The domain of **a** is an integer type with the **min** = 0 and the **max**=100
 Given this information, and assuming uniform distrubtion, what is the **selectivity** of the **σ<sub>a>10** predicate?&nbsp;&nbsp;**90%**
 
 ### Assume only a secondary B+-tree on R(a) How many page accesses will the query cost?  
+  
+__*Note: &nbsp;For a secondary B+ Tree, we need to compute __
+
 
