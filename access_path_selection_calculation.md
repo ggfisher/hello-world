@@ -98,4 +98,5 @@ So in this case:
 * __**So the final cost is:**__  
 The height of the tree + number of matching leaves + the number of disk accesses:  
      * 2 + 10 + 1000 = 1012  
+
 __*Note: &nbsp;In this instance it makes sense to use an index.*__  
