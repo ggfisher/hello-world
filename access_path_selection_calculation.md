@@ -9,7 +9,7 @@ Each Page Contains 100 bytes
 Tuples/page = 10  
 Number of Directory Entries (DE)/page = 100  
 The domain of **a** is an integer type with the **min** = 0 and the **max**=100  
-Given this information, and assuming uniform distrubtion, what is the selectivity of the **σ<sub>a>10** predicate?&nbsp;&nbsp;90%  
+Given this information, and assuming uniform distrubtion, what is the **selectivity** of the **σ<sub>a>10** predicate?&nbsp;&nbsp;**90%**   
 How many pages then, do we expect to be output from this query?&nbsp;&nbsp;
 
 
