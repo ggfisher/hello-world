@@ -42,8 +42,8 @@ Some additional information and explanation is needed to calculate the cost in t
 
 (**Q4b**) How many leaf pages do we have in a secondary index?  
 (**A4b**) The answer is __**1,000**__.  
-__*Note: &nbsp;The reason for this is that, whereas the Primary Index had 10,000 leaf pages, it stored actual tuples.  For this secondary index we can store 10 times as much information in the leaf pages since we know that Data Entries are smaller than tuples by a factor of 10.  What this means is that we need a factor of 10 fewer leaf nodes to index the data on disk.  Another way of saying this, is that for the secondary index, we can store 10 times the number of data entries for each leaf page in the secondary index.
-__  
+__*Note: &nbsp;The reason for this is that, whereas the Primary Index had 10,000 leaf pages, it stored actual tuples.  For this secondary index we can store 10 times as much information in the leaf pages since we know that Data Entries are smaller than tuples by a factor of 10.  What this means is that we need a factor of 10 fewer leaf nodes to index the data on disk.  Another way of saying this, is that for the secondary index, we can store 10 times the number of data entries for each leaf page in the secondary index.__  
+
 
 
 
