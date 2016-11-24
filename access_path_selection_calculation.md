@@ -6,7 +6,7 @@
 
 Assume we have the following indexes:
 
-B+ Tree(a,b)\   //Hash(a)\    //B+ Tree(a)
+B+ Tree(a,b)\_   Hash(a)\_    //B+ Tree(a)
 
 
 
