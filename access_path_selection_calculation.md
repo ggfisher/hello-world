@@ -11,15 +11,15 @@ The domain of **a** is an integer type with the **min** = 0 and the **max**=100
 Given this information, and assuming uniform distrubtion, what is the **selectivity** of the **σ<sub>a>10** predicate?&nbsp;&nbsp;**90%**   
 How many pages then, do we expect to be output from this query?&nbsp;&nbsp;(.9 * 10,000) = 9,000  
 
-#### Assume you want to do a file scan - how much does the file scan access path cost?  In other words, how many pages, worth of units, does it take, to execute this using a file scan?  
+### Assume you want to do a file scan - how much does the file scan access path cost?  In other words, how many pages, worth of units, does it take, to execute this using a file scan?  
   
 10,000 pages because we have to read every page of **R** and since we are doing pipeline execution, the cost is the size of **R**.  
   
-#### Now assume we are considering the hash index **Hash(a)** - how much does it cost for a hash index?  
+### Assume we are considering the hash index **Hash(a)** - how much does it cost for a hash index?  
   
 10,000 beause a hash index is only good for equalities so we have to scan anyway.  
   
-#### Assume a primary B+ Tree index on R(a).  How many page accesses will the query cost?  
+### Assume a primary B+ Tree index on R(a).  How many page accesses will the query cost?  
 It will be helpful to compute:  
   
 * The **fanout** of this index, where fanout is the number of directory entries that can be stored in the page?  
@@ -34,7 +34,7 @@ __*Note: &nbsp;Since this is a primary index, the root node of the tree, and the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**log<sub>100</sub>&nbsp;10,000 + 9,000**  
   
 
-#### Assume only a secondary B+-tree on R(a) How many page accesses will the query cost? 
+### Assume only a secondary B+-tree on R(a) How many page accesses will the query cost? 
 
 __*Note: &nbsp;An important distinction between a secondary index and a primary index is that the lowest layer of the tree in a secondary index does not contain the actual tuples of data as it did in the primary index.  Instead, it contains pointers to data on disk.*__  
   
