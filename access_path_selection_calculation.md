@@ -34,7 +34,7 @@ __*Note: &nbsp;Since this is a primary index, the root node of the tree, and the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**log<sub>100</sub>&nbsp;10,000 + 9,000**  
   
 
-(**Q4a**) Assume only a secondary B+-tree on R(a) How many page accesses will the query cost? 
+#### Assume only a secondary B+-tree on R(a) How many page accesses will the query cost? 
 
 __*Note: &nbsp;An important distinction between a secondary index and a primary index is that the lowest layer of the tree in a secondary index does not contain the actual tuples of data as it did in the primary index.  Instead, it contains pointers to data on disk.*__  
   
