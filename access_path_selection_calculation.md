@@ -35,12 +35,13 @@ __*Note: &nbsp;Since this is a primary index, the root node of the tree, and the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**log<sub>100</sub>&nbsp;10,000 + 9,000**  
   
 
-(**Q4**) How much does it cost to do the secondary scan?  
+(**Q4a**) How much does it cost to do the secondary scan?  
 __*Note: &nbsp;An important distinction between a secondary index and a primary index is that the lowest layer of the tree in a secondary index does not contain the actual tuples of data as it did in the primary index.  Instead, it contains pointers to data on disk.*__  
   
 Some additional information and explanation is needed to calculate the cost in this scenario.  
 
-
+(**Q4b**) How many leaf pages do we have in a secondary index?  
+(**A4b**) The answer is 1,000.  The reason for this is that, whereas the Primary Index had 10,000 leaf pages, it stored actual data.  For this secondary index we can store 10 times as much information in the leaf pages since we a
 
 
 
