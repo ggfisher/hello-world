@@ -73,15 +73,25 @@ Given this information, and assuming uniform distrubtion, what is the **selectiv
 
 ### Assume only a secondary B+-tree on R(a) How many page accesses will the query cost?  
   
-__*Note: &nbsp;For a secondary B+ Tree, there are few factors that we need to compute, the height of the tree, and the number of leaf pages do we have to read.__
+__*Note: &nbsp;For a secondary B+ Tree, there are few factors that we need to compute:__  
 
-* The height of the tree which equal to:  
-   * log<sub>fanout</sub> X Number of Leaves  
 * Number of leaves in the tree  
+* The height of the tree which is equal to:  
+   * log<sub>fanout</sub> X Number of Leaves    
 * Number of matching leaves  
 * Matching leaves X Directory Entries (DE)/ Page  
-   
-So in this case, nothing has changed from the previous calculations.
+* Selectivity  
+  
+So in this case:  
+* Number of leaves in the tree  
+  * It is still 1000 as previously calculated
+* The height of the tree:
+  * log<sub>100</sub> 1000 = 3  
+* Selectivity  
+  * It would be **1** now since we are looking only for __*a=10*__  
+  
+  
+
    
    
    
