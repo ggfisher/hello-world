@@ -25,7 +25,7 @@ It will be helpful to compute:
 * The **fanout** of this index, where fanout is the number of directory entries that can be stored in the page?  
   * Number of Directory Entries (DE)/page = 100  
 
-* What is the height of this index, where the height of the index is the number of distinct levels that contain indexes for the tree?   
+* What is the height of this index:  
   * Since each Directory node has 100 children, how many levels do we need in the tree, in order to index 10,000 pages?   (100&nbsp;X&nbsp;100&nbsp;) = 10,000 so the height of the tree is **2**&nbsp;&nbsp;&nbsp;**(log<sub>100</sub>&nbsp;10,000=2)**.  
 
 __*Note: &nbsp;Since this is a primary index, the root node of the tree, and the second level of the tree will only contain the Data Table Entries only.  The third level of the tree will contain the actual tuples that include the actual data.&nbsp;This means there are 10,000 pages at the bottom of the tree, on the third level*__  
@@ -77,7 +77,7 @@ __*Note: &nbsp;For a secondary B+ Tree, there are few factors that we need to co
 
 * Number of leaves in the tree  
 * The height of the tree which is equal to:  
-   * log<sub>fanout</sub> X Number of Leaves    
+   * log<sub>fanout</sub> of the number of leaves  
 * Number of matching leaves 
   * Selectivity * Number of Leaves
 * Number of Page accesses do we need to access the record:  
@@ -88,22 +88,13 @@ So in this case:
 * Number of leaves in the tree  
   * It is still 1000 as previously calculated
 * The height of the tree:
-  * log<sub>100</sub> 1000 = 3  
+  * log<sub>100</sub> 1000 = 2  
 * Selectivity  
   * It would be **1** now since we are looking only for __*a=10*__  and we are assuming a normal distribution.   
 * The number of matching leaves:  
    * .01 * 1000 = __*10*__  
 * Number of Page accesses do we need to access the record:  
   * 10 * 100 = 1000  
-
- 
-
-  
-  
-
-   
-   
-   
-
-
-
+* __**Final Calculation.**__  
+So the total cost is the height of the tree + Number of matching leaves + the number of disk accesses:  
+* 2 + 10 + 1000 = 1012  
