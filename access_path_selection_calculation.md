@@ -33,8 +33,9 @@ __*Note: &nbsp;Since this is a primary index, the root node of the tree, and the
 (**A3a**) We are assuming there is nothing cached in memory.  We start from the top of the tree, and we have to load pages, until we get to the left most value, and then we start scanning.  So we start at the top of the tree, we read the Root,  we read the page on the second layer, and now we should be pointed at the start position on level three where we need to start scanning.  We know we need to read 9,000 pages to output them because all of the pages are ordered, and thus we can just read it through. So the final calculation is:  
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**log<sub>100</sub>&nbsp;10,000 + 9,000**  
+  
 
-
+(**Q4**) How much does it cost to do the secondary scan?  
 
 
 
