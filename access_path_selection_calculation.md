@@ -63,4 +63,12 @@ The total number of all required accesses will then be:
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__**2 + 900 + 90,000**__  
 
+### Now suppose we run select a=10 from relation ***R*** where:
+
+Each Page Contains 100 bytes  
+Tuples/page = 10  
+Number of Directory Entries (DE)/page = 100  
+The domain of **a** is an integer type with the **min** = 0 and the **max**=100  
+Given this information, and assuming uniform distrubtion, what is the **selectivity** of the **σ<sub>a>10** predicate?&nbsp;&nbsp;**90%**
+
 
