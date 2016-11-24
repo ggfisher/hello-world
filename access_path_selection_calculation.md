@@ -93,6 +93,8 @@ So in this case:
   * It would be **1** now since we are looking only for __*a=10*__  and we are assuming a normal distribution.   
 * The number of matching leaves:  
    * .01 * 1000 = __*10*__  
+* Number of Page accesses do we need to access the record:  
+  * 10 * 100 = 1000  
 
  
 
