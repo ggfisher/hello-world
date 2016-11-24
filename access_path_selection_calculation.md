@@ -4,7 +4,7 @@
 
 σ<sub>a>10 - R
 
-|R| - the size of R = 10,000
+|R| - the size of R = 10,000 \s\s
 Each Page Contains 100 bytes
 Tuples/page = 10
 Number of Directory Entries (DE)/page = 100
