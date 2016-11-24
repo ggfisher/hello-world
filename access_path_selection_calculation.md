@@ -95,6 +95,6 @@ So in this case:
    * .01 * 1000 = __*10*__  
 * Number of Page accesses do we need to access the record:  
   * 10 * 100 = 1000  
-* __**Final Calculation.**__  
+* __**So the Cost is:**__  
 So the total cost is the height of the tree + number of matching leaves + the number of disk accesses:  
      * 2 + 10 + 1000 = 1012  
