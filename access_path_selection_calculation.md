@@ -77,6 +77,8 @@ __*Note: &nbsp;For a secondary B+ Tree, there are a couple of factors that we ne
 
 * The height of the tree which equal to:  
    * log<sub>fanout</sub> X Number of Leaves  
+   * Number of matching leaves  
+   
    
 
 
