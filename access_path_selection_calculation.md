@@ -1,6 +1,6 @@
 ###Access Path Selection Calculation
 
-#### Suppose we run select a>10 from relation ***R***
+#### Suppose we run select a>10 from relation ***R*** where:
 
 
 |R| = 10,000 (the size of the relation in pages)  
