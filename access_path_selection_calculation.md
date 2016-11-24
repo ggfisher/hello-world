@@ -28,6 +28,10 @@ B+ Tree(a)&nbsp;&nbsp;Secondary Index&nbsp;&nbsp;&nbsp;&nbsp; Hash(a)&nbsp;&nbsp
 (**Q3b**) What is the **fanout** of this index?&nbsp;&nbsp;**100**  
 (**Q3c**) What is the height of this index?&nbsp;&nbsp;  
 (**A3c**) Since each Directory node has 100 children, how many levels do we need in the tree, in order to index 10,000 pages?   (100&nbsp;X&nbsp;100&nbsp;) = 10,000 so the height of the tree is **2**.  
+***Note: &nbsp;Since this is a primary index, the primary node of the tree, and the second level of the tree will only contain the Data Table Entries only.  The third level of the tree will contain the actual tuples that include the actual data.  
+
+
+
 
 
 
