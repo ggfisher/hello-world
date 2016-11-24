@@ -97,4 +97,4 @@ So in this case:
   * 10 * 100 = 1000  
 * __**Final Calculation.**__  
 So the total cost is the height of the tree + Number of matching leaves + the number of disk accesses:  
-* 2 + 10 + 1000 = 1012  
+     * 2 + 10 + 1000 = 1012  
