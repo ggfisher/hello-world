@@ -25,7 +25,7 @@ It will be helpful to compute:
 * The **fanout** of this index, where fanout is the number of directory entries that can be stored in the page?  
   * Number of Directory Entries (DE)/page = 100  
 
-* What is the height of this index?&nbsp;&nbsp;  
+* What is the height of this index, where the height of the index is the distance from the root to the leaf nodes of the tree?   
   * Since each Directory node has 100 children, how many levels do we need in the tree, in order to index 10,000 pages?   (100&nbsp;X&nbsp;100&nbsp;) = 10,000 so the height of the tree is **2**&nbsp;&nbsp;&nbsp;**(log<sub>100</sub>&nbsp;10,000=2)**.  
 
 __*Note: &nbsp;Since this is a primary index, the root node of the tree, and the second level of the tree will only contain the Data Table Entries only.  The third level of the tree will contain the actual tuples that include the actual data.&nbsp;This means there are 10,000 pages at the bottom of the tree, on the third level*__  
