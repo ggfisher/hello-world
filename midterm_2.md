@@ -74,12 +74,17 @@ R(ABCDEF)
   
 Given the following functional dependencies:  
 
-- 1) AB->C  
-BC->AD  
-D->E  
-CF->B  
+1) AB->C  
+2) BC->AD  
+3) D->E  
+4) CF->B  
   
-(AB)<sup>+</sup> = AB
+(AB)<sup>+</sup> = AB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Armstrong Reflexivity  
+&nbsp;&nbsp;&nbsp;= ABC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 1  
+&nbsp;&nbsp;&nbsp; = ABCD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 2
+&nbsp;&nbsp;&nbsp; = ABCDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 3  
+
+
 
 
 
