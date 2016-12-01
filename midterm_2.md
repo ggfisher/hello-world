@@ -182,7 +182,7 @@ and the following functional dependencies:
 |A-->BCD|Yes|Yes|  
 |AB-->CD|Yes|No|  
 |ABC-->D|Yes|No|  
-|BD-->AD|Yes|No|  
+|BD-->AD|Yes|Yes|  
 |C-->AD|No|No|  
   
 When can you say that a superkey is minimal and consequently is a candidate key?  
