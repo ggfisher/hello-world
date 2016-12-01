@@ -19,8 +19,11 @@ Given the following schema, both Ssn and number are __prime attributes__ whereas
 |---|---|---|  
 
   
-Full Functional Dependency  
-Partial Functional Dependency  
+__*Full Functional Dependency verses Partial Functional Dependency*__  
+  
+These topics deal primarily with deciding whether a relation schema is in 2NF.  Althought not covered specifically in class, they are important topics to understand for the upcoming examples.  
+
+
 
 
 __Topics__
