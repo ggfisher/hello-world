@@ -122,9 +122,16 @@ __Step 2__: Determine if any of the FD are redundant. We do this by determing th
   
 Using FD number 1 compute (X)<sup>+</sup>  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;(X)<sup>+</sup>=XW  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X<sup>+</sup>=XW  
 
-Now ignore FD number 1
+Now compute (X)<sup>+</sup> again except this time do not consider FD number 1.  If you can still find (X)<sup>+</sup> without FD number 1 then this FD is redundant.  
+
+(X)<sup>+</sup> without FD number 1:  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X<sup>+</sup>=X  
+  
+This proves that FD number 1 is necessary and is not redundant.  
+  
 
 
 
