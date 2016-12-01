@@ -193,16 +193,7 @@ For example, ABC and AB are both superkeys.  Since AB is also a superkey, then t
 The same logic can be considered for keys AB and A.  We have already decided that both AB and A are both superkeys.  Since A is also a superkey, this means that AB is not minimal.  Since superkey A does not have any subsets, it alone is the only candidate key for the relation.  
   
 Now consider the last superkey __BD__.  Is it a candidate key?  We begin by asking if there is any proper subset of __BD__ that is also a superkey?  The only subsets of __BD__ are __B__ and __D__ and neither of these individual attributes are superkeys.  So the answer is __yes__, __BD__ is also a candidate key of the relation.  
+   
+###__Finding Number of Candidate Keys Additional Example__  
   
 
-  
-
-  
-
-  
-
-
-
- 
- 
- 
