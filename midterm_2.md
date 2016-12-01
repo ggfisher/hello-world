@@ -1,6 +1,6 @@
 ## Midterm 2 Study Guide  
   
-__Important Definitions with Examples__  
+###__Important Definitions with Examples__  
 
 __*Superkey*__  
   
@@ -66,9 +66,9 @@ _EP3 relation_
 |_**Pnumber**_|Pname|Plocation
 |---|---|---|  
   
-__Finding the Closure Set of Attributes__  
-__Finding Candidate Keys__  
-__Minimal Cover__  
+###__Finding the Closure Set of Attributes__  
+###__Finding Candidate Keys__  
+###__Minimal Cover__  
  
  
  
