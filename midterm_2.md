@@ -185,8 +185,13 @@ and the following functional dependencies:
 |BD-->AD|Yes|No|  
 |C-->AD|No|No|  
   
-A good way to remember superkey verses candidate key is to remember the following:
-  - __If a subset of a superkey is another superkey, then it is not minimal, and candidate keys are required to be minimal.__  
+When can you say that a superkey is minimal and consequently is a candidate key?  
+  - __If a subset of a superkey is another a superkey, then it is not a candidate key.__  
+  - __Alternatively, if the subset of a superkey is not a superkey, then it is a candidate key.__  
+  
+For example, ABC and AB are both superkeys.  Since AB is also a superkey, then this means ABC is not minimal and not a candidate key.  
+The same logic can be considered for keys AB and A.  We have already decided that both AB and A are both superkeys.  Since A is also a superkey, this means that AB is not minimal.  Since superkey A does not have any subsets, it alone is the only candidate key for the relation.  
+  
 
   
 
