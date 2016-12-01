@@ -209,6 +209,8 @@ and the following functional dependencies:
   
 __Step 1__: We start by looking for attributes that do not appear on the right hand side of any of the functional dependencies.  This implies that it cannot be found through any of the functional dependencies and it is consequently part or potentially singly comprises the candidate key of the relation.  
   
-By looking at the four functional dependencies, we see that neither A or B appear on the right hand side of any of the FD.  
+By looking at the four functional dependencies, we see that neither A or B appear on the right hand side of any of the FD.  This means that AB is either part of or the entire candidate key of the relation.   
   
-__Step 2__:
+__Step 2__:Now we find the closure of AB<sup>+</sup>  
+  
+
