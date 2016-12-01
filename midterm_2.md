@@ -85,6 +85,10 @@ Given the following functional dependencies:
 - = ABCD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 2  
 - = ABCDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 3  
   
+So (AB)<sup>+</sup> is __ABCDE__  
+
+
+  
 
 
 
