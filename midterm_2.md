@@ -46,7 +46,8 @@ We can see the following:
 - {Ssn, Pnumber} → Hours is a fully functionally dependent because neither of the following hold:   
     - Ssn → Hours  
     - Pnumber → Hours  
-- The dependency {Ssn, Pnumber} → Ename is partial because Ssn → Ename holds.  
+- However the dependency   
+    - {Ssn, Pnumber} → Ename is partial because Ssn → Ename holds.  
 
 The test for 2NF involves testing for functional dependencies whose left-hand side attributes are part of the primary key. If the primary key contains a single attribute, the test need not be applied at all. The nonprime attribute Ename violates 2NF because of FD2, as do the nonprime attributes Pname and Plocation because of FD3. The functional dependencies FD2 and FD3 make Ename, Pname, and Plocation partially dependent on the primary key {Ssn,Pnumber} of EMP_PROJ, thus violating the 2NF test.
 
