@@ -68,18 +68,20 @@ _EP3 relation_
   
 ###__Finding the Closure Set of Attributes__  
   
-Find the Closure of the set of Attributes in the following relation:  
+Being able to find the the Closure of a set of attributes is an important step in finding the candidate keys of a relation.  Find the closure of (AB)<sup>+</sup> in the following relation:  
 
 R(ABCDEF)  
   
 Given the following functional dependencies:  
 
-AB->C  
+- 1)AB->C  
 BC->AD  
 D->E  
 CF->B  
   
-Find (AB)<sup>+</sup>  
+(AB)<sup>+</sup> = AB
+
+
 
 
 
