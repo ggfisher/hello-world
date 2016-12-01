@@ -91,6 +91,19 @@ So (AB)<sup>+</sup> is __ABCDE__
   
 Used to determine if an attribute of a functional dependency is extraneous.  An attribute is said to be extranious if we can remove it without changing the closure of the set of functional dependencies.  
   
+Given the following relation:  
+  
+R(WXYZ)  
+  
+And the following functional dependencies:  
+  
+1) X->W  
+2) WZ->XY  
+3) Y->WXZ  
+  
+
+
+
 
 
 
