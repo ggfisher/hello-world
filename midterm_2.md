@@ -68,7 +68,7 @@ _EP3 relation_
   
 ###__Finding the Closure Set of Attributes__  
   
-Being able to find the the Closure of a set of attributes is an important step in finding the candidate keys of a relation.  Find the closure of (AB)<sup>+</sup> in the following relation:  
+Being able to find the the closure of a set of attributes is an important step in finding the candidate keys of a relation.  Find the closure of (AB)<sup>+</sup> in the following relation:  
 
 R(ABCDEF)  
   
@@ -88,6 +88,9 @@ Given the following functional dependencies:
 So (AB)<sup>+</sup> is __ABCDE__  
   
 ###__Canonical Cover of Functional Dependencies__  
+  
+Used to determine if an attribute of a functional dependency is extraneous.  An attribute is said to be extranious if we can remove it without changing the closure of the set of functional dependencies.  
+  
 
 
 
