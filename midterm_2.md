@@ -302,6 +302,10 @@ __Step 3__: We will now try combinations of the single attributes that failed wh
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WX<sup>+</sup>=WXYZ&nbsp;&nbsp;&nbsp;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XZ<sup>+</sup>=WXYZ&nbsp;&nbsp;&nbsp;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WZ<sup>+</sup>=WZ&nbsp;&nbsp;&nbsp;  
+  
+So we have found three keys for the relation: __Y__, __WX__ and __XZ__.  
+  
+
 
 
 
