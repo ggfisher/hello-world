@@ -276,29 +276,32 @@ __Example 4__
   
 Finding the candidate key(s) of the following relation.  
   
-R(ABCDE)  
+R(WXYZ)  
   
 and the following functional dependencies:  
   
-1) BC-->ADE  
-2) D-->B  
+1) Z-->W  
+2) Y-->XZ  
+3) WX-->Y  
   
 __Step 1__: We start by looking for attributes that do not appear on the right hand side of any of the functional dependencies.  This implies that it cannot be found through any of the functional dependencies and it is consequently part or potentially singly comprises the candidate key of the relation.  
   
-By looking at the four functional dependencies, we see that the only attribute that does not appear on the right hand side of any of the FD's is attribute C.  This means that C is either part of or the entire candidate key of the relation.   
+By looking at the four functional dependencies, we see that there are no attributes that do not appear on the right hand side of any of the FD's.  This means that we need to check combinations of all attributes to determine the candidate key(s) for the relation.
   
-__Step 2__:Now we find the closure of C<sup>+</sup>  
+__Step 2__: We will try the single attributes individually first:  
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C<sup>+</sup>=C&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W<sup>+</sup>=W&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X<sup>+</sup>=X&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y<sup>+</sup>=XYWZ&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z<sup>+</sup>=ZW&nbsp;&nbsp;&nbsp;  
   
-So in this case, we see that attribute __C__ is a part of the candidate key for the relation.  In this instance, we need to find the closure of some composite keys using attribute __C__ to determine the actual candidate key for the relation.  
+We now need to check combinations of the single attribute keys to determine if we have additional candidate keys for the relation.
   
-We will try the following - AC, BC, CD and CE:  
+__Step 3__: We will now try combinations of the single attributes that failed when checked individually:  
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AC<sup>+</sup>=AC&nbsp;&nbsp;&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BC<sup>+</sup>=ABCDE&nbsp;&nbsp;&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CD<sup>+</sup>=ABCDE&nbsp;&nbsp;&nbsp;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CE<sup>+</sup>=CE&nbsp;&nbsp;&nbsp;  
-  
-So we have found two candidate keys __BC__ and __CD__ for the relation.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WX<sup>+</sup>=WXYZ&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XZ<sup>+</sup>=WXYZ&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WZ<sup>+</sup>=WZ&nbsp;&nbsp;&nbsp;  
+
+
 
