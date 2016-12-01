@@ -3,6 +3,11 @@
 __Important Definitions with Examples__  
 
 Superkey  
+Given the following schema: 
+
+|_**SSn**_|Ename|Bdate|Address|Dnumber|
+|---|---|---|---|---|  
+
 Prime Attribute  
 Unprime Attribute 
 Full Functional Dependency  
