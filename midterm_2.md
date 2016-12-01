@@ -87,7 +87,7 @@ Given the following functional dependencies:
   
 So (AB)<sup>+</sup> is __ABCDE__  
   
-###__Canonical Cover of Functional Dependencies__  
+###__Irreducable Set or Canonical Form of Functional Dependencies__  
   
 Used to determine if an attribute of a functional dependency is extraneous.  An attribute is said to be extranious if we can remove it without changing the closure of the set of functional dependencies.  
   
@@ -116,10 +116,10 @@ So we end up with the following:
 3) WZ-->Y  
 4) Y-->W  
 5) Y-->X  
-5) Y-->Z  
+6) Y-->Z  
   
-
-
+__Step 2__: Determine if the decomposed set of FD are essential or redundant - we do this by determing the closure of each attribute:  
+  
 
 
 
