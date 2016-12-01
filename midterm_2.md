@@ -63,9 +63,6 @@ _EP3 relation_
 |_**Pnumber**_|Pname|Plocation
 |---|---|---|  
 
-
-
-
 __Topics__
  - __Attribute Closure__  
  - __Finding Candidate Keys__  
