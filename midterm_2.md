@@ -103,7 +103,15 @@ And the following functional dependencies:
 
 __Step 1__: Apply Decomposition Rule:  
   
-This means that you decompose &alpha;-->&beta;&gamma;
+This means that you perform the following decomposition:  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&beta;&gamma;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&beta;   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&gamma;  
+  
+
+
+
 
 
 
@@ -113,7 +121,6 @@ This means that you decompose &alpha;-->&beta;&gamma;
 
 
 ###__Finding Candidate Keys__  
-###__Minimal Cover__  
  
  
  
