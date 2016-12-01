@@ -196,6 +196,8 @@ Now consider the last superkey __BD__.  Is it a candidate key?  We begin by aski
    
 ###__Finding Number of Candidate Keys Additional Examples__  
   
+__Example 1__  
+  
 Finding the candidate key(s) of the following relation.  
   
 R(ABCDEFGH)  
@@ -212,5 +214,62 @@ __Step 1__: We start by looking for attributes that do not appear on the right h
 By looking at the four functional dependencies, we see that neither A or B appear on the right hand side of any of the FD.  This means that AB is either part of or the entire candidate key of the relation.   
   
 __Step 2__:Now we find the closure of AB<sup>+</sup>  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AB<sup>+</sup>=ABCDEFGH&nbsp;&nbsp;&nbsp;  
+  
+So AB is both the candidate key and superkey of relation R.  
+  
+__Example 2__  
+  
+Finding the candidate key(s) of the following relation.  
+  
+R(ABCDEFGH)  
+  
+and the following functional dependencies:  
+  
+1) AB-->C  
+2) BD-->EF  
+3) AD-->G  
+4) A-->H  
+  
+__Step 1__: We start by looking for attributes that do not appear on the right hand side of any of the functional dependencies.  This implies that it cannot be found through any of the functional dependencies and it is consequently part or potentially singly comprises the candidate key of the relation.  
+  
+By looking at the four functional dependencies, we see that neither A,B or D appear on the right hand side of any of the FD.  This means that ABD is either part of or the entire candidate key of the relation.   
+  
+__Step 2__:Now we find the closure of ABD<sup>+</sup>  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABD<sup>+</sup>=ABCDEFGH&nbsp;&nbsp;&nbsp;  
+  
+So ABD is both the candidate key and superkey of relation R.  
+  
+__Example 3__  
+  
+Finding the candidate key(s) of the following relation.  
+  
+R(ABCDE)  
+  
+and the following functional dependencies:  
+  
+1) BC-->ADE  
+2) D-->B  
+  
+__Step 1__: We start by looking for attributes that do not appear on the right hand side of any of the functional dependencies.  This implies that it cannot be found through any of the functional dependencies and it is consequently part or potentially singly comprises the candidate key of the relation.  
+  
+By looking at the four functional dependencies, we see that the only attribute that does not appear on the right hand side of any of the FD's is attribute C.  This means that C is either part of or the entire candidate key of the relation.   
+  
+__Step 2__:Now we find the closure of C<sup>+</sup>  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C<sup>+</sup>=C&nbsp;&nbsp;&nbsp;  
+  
+So in this case, we see that attribute __C__ is a part of the candidate key for the relation.  In this instance, we need to find the closure of some composite keys using attribute __C__ to determine the actual candidate key for the relation.  
+  
+We will try the following - AC, BC, CD and CE:  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AC<sup>+</sup>=AC&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BC<sup>+</sup>=ABCDE&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CD<sup>+</sup>=ABCDE&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CE<sup>+</sup>=CE&nbsp;&nbsp;&nbsp;  
+  
+So we have found two candidate keys __BC__ and __CD__ for the relation.  
   
 
