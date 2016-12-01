@@ -1,6 +1,6 @@
 ## Midterm 2 Study Guide  
 
-__Important Definitions__  
+__Important Definitions with Examples__  
 
 Superkey  
 Prime Attribute  
