@@ -136,6 +136,17 @@ Using FD number 2 compute (WZ)<sup>+</sup>
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WZ<sup>+</sup>=WZXY  
   
+So it shows that with (WZ)<sup>+</sup> all attributes can be found.  
+  
+Now compute (WZ)<sup>+</sup> again except this time do not consider FD number 2.  If you can still find (WZ)<sup>+</sup> without FD number 2 then this FD is redundant.  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WZ<sup>+</sup>=WZYX  
+  
+We see that we can find WZ<sup>+</sup> without FD number 2.  FD number 2 is therefore redundant.  
+  
+
+
+ 
 
 
  
