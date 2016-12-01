@@ -1,5 +1,5 @@
 ### Midterm 2 Study Guide  
 
-__Definitions__  
+__Important Definitions__  
 
 
