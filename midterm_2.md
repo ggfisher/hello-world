@@ -2,7 +2,8 @@
 
 __Important Definitions with Examples__  
 
-Superkey  
+__Superkey__  
+  
 Given the following schema: 
 
 |_**SSn**_|Ename|Bdate|Address|Dnumber|
