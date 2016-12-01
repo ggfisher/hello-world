@@ -185,7 +185,8 @@ and the following functional dependencies:
 |BD-->AD|Yes|No|  
 |C-->AD|No|No|  
   
-A good way to remember superkey verses candidate key is to say __if a subset of a superkey is another superkey, then it is not minimal, and candidate keys are required to be minimal.__  
+A good way to remember superkey verses candidate key is to remember the following:
+  -__If a subset of a superkey is another superkey, then it is not minimal, and candidate keys are required to be minimal.__  
 
   
 
