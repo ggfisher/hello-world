@@ -144,29 +144,32 @@ Now compute (WZ)<sup>+</sup> again except this time do not consider FD number 2.
   
 We see that we can find WZ<sup>+</sup> without FD number 2.  FD number 2 is therefore redundant.  
   
+Continuing with this process allows to determing that there are only four of the original six FD that are required to find all attributes.  They are:  
+  
+1) X-->W   
+2) WZ-->Y  
+3) Y-->X  
+4) Y-->Z  
+  
+__Step 3__: The final step is to determine if any of the FD with more than one attribute on the left hand side contain any attributes that are unnecessary in determining the closure of the particular FD.  In our example, we have only one FD to consider - FD number 2:  
+  
+2) WZ-->Y  
+
+We compare the closure of WZ<sup>+</sup> with the closure of W<sup>+</sup> and Z<sup>+</sup> to see if either of the left hand side attributes alone can find the full closure WZ<sup>+</sup>.  If either of them can, then the other attribute can be disgarded.  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WZ<sup>+</sup>=WZYX&nbsp;&nbsp;&nbsp;found by FD 2 and FD 3  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W<sup>+</sup>=W  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z<sup>+</sup>=Z  
+  
+So in this example, both right hand attributes of FD 2 are required.  
+  
+
 
 
  
 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ###__Finding Candidate Keys__  
  
  
