@@ -74,7 +74,7 @@ R(ABCDEF)
   
 Given the following functional dependencies:  
 
-- 1)AB->C  
+- 1) AB->C  
 BC->AD  
 D->E  
 CF->B  
