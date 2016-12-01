@@ -101,7 +101,10 @@ And the following functional dependencies:
 2) WZ->XY  
 3) Y->WXZ  
 
-  Step 1: Apply Decomposition Rule:  
+__Step 1__: Apply Decomposition Rule:  
+  
+This means that you decompose &alpha;
+
 
 
 
