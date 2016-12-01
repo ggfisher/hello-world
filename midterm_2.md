@@ -2,4 +2,7 @@
 
 __Important Definitions__  
 
+Superkey  
+Prime Attribute  
+Unprime Attribute  
 
