@@ -194,6 +194,21 @@ The same logic can be considered for keys AB and A.  We have already decided tha
   
 Now consider the last superkey __BD__.  Is it a candidate key?  We begin by asking if there is any proper subset of __BD__ that is also a superkey?  The only subsets of __BD__ are __B__ and __D__ and neither of these individual attributes are superkeys.  So the answer is __yes__, __BD__ is also a candidate key of the relation.  
    
-###__Finding Number of Candidate Keys Additional Example__  
+###__Finding Number of Candidate Keys Additional Examples__  
   
-
+Finding the candidate key(s) of the following relation.  
+  
+R(ABCDEFGH)  
+  
+and the following functional dependencies:  
+  
+1) AB-->C  
+2) A-->DE  
+3) B-->F  
+4) F-->GH  
+  
+__Step 1__: We start by looking for attributes that do not appear on the right hand side of any of the functional dependencies.  This implies that it cannot be found through any of the functional dependencies and it is consequently part or potentially singly comprises the candidate key of the relation.  
+  
+By looking at the four functional dependencies, we see that neither A or B appear on the right hand side of any of the FD.  
+  
+__Step 2__:
