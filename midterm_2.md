@@ -30,12 +30,12 @@ A relation schema R is in 2NF if every nonprime attribute A in R is fully functi
 
 Second normal form (2NF) is based on the concept of full functional dependency. A functional dependency X → Y is a __full functional dependency__ if removal of any attribute A from X means that the dependency does not hold any more. A functional dependency X→Y is a __partial dependency__ if some attribute A ε X can be removed from X and the dependency still holds.  In the EMP_PROJ relation below,
 
-_EMP_PROJ relation_
+_EMP_PROJ_ relation  
 
 |_**Ssn**_|_**Pnumber**_|Hours|Ename|Pname|Plocation|
 |---|---|---|---|---|---|
 
-and the _EMP_PROJ relation functional dependencies_ given below:    
+and the _EMP_PROJ_ relation functional dependencies given below:  
 
 - __FD1__ {Ssn,Pnumber} → Hours
 - __FD2__ Ssn → Ename 
