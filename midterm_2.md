@@ -67,6 +67,22 @@ _EP3 relation_
 |---|---|---|  
   
 ###__Finding the Closure Set of Attributes__  
+  
+Find the Closure of the set of Attributes in the following relation:  
+
+R(ABCDEF)  
+  
+Given the following functional dependencies:  
+
+AB->C  
+BC->AD  
+D->E  
+CF->B  
+  
+Find (AB)<sup>+</sup>  
+
+
+
 ###__Finding Candidate Keys__  
 ###__Minimal Cover__  
  
