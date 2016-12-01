@@ -118,8 +118,16 @@ So we end up with the following:
 5) Y-->X  
 6) Y-->Z  
   
-__Step 2__: Determine if the decomposed set of FD are essential or redundant - we do this by determing the closure of each attribute:  
+__Step 2__: Determine if any of the FD are redundant. We do this by determing the closure of each attribute along with testing each of the FD one at a time to see if they are redundant as shown:  
   
+Using FD number 1 compute (X)<sup>+</sup>  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;(X)<sup>+</sup>=XW  
+
+Now ignore FD number 1
+
+
+
 
 
 
