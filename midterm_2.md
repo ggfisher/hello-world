@@ -165,7 +165,7 @@ So in this example, if W<sup>+</sup> had found the same closure as WZ<sup>+</sup
   
 ###__Finding Candidate Keys__  
   
-We begin by finding the candidate key of the following relation:  
+We begin by finding the candidate key(s) of the following relation:  
   
 R(ABCD)  
   
@@ -176,6 +176,17 @@ and the following functional dependencies:
 3) ABC-->D  
 4) BD-->AD  
 5) C-->AD  
+  
+|FD|Superkey|candidate key|  
+|---|---|---|  
+|A-->BCD|Yes|45.0|  
+|AB-->CD|Yes|33.0|  
+|ABC-->D|Yes|55.5|  
+|BD-->AD|Yes|25.5|  
+|C-->AD|No|25.5|  
+
+  
+
   
 
 
