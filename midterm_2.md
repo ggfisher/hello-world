@@ -132,6 +132,15 @@ Now compute (X)<sup>+</sup> again except this time do not consider FD number 1. 
   
 This proves that FD number 1 is necessary and is not redundant.  
   
+Using FD number 2 compute (WZ)<sup>+</sup>  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WZ<sup>+</sup>=WZXY  
+  
+
+
+ 
+
+
 
 
 
