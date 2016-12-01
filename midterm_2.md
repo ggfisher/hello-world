@@ -103,7 +103,7 @@ And the following functional dependencies:
 
 __Step 1__: Apply Decomposition Rule:  
   
-This means that you decompose &alpha;
+This means that you decompose &alpha;-->&beta;&gamma;
 
 
 
