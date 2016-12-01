@@ -44,7 +44,7 @@ and the _EMP_PROJ_ relation functional dependencies given below:
 We can see the following:  
 
 - {Ssn, Pnumber} → Hours is a fully functionally dependent because neither of the following hold:   
-    Ssn → Hours
+    Ssn → Hours  
     Pnumber → Hours  
 - The dependency {Ssn, Pnumber} → Ename is partial because Ssn → Ename holds.  
 
