@@ -1,4 +1,4 @@
-### Midterm 2 Study Guide  
+## Midterm 2 Study Guide  
 
 __Important Definitions__  
 
