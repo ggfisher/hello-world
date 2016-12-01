@@ -47,7 +47,7 @@ We can see the following:
     - Ssn → Hours  
     - Pnumber → Hours  
 - However the dependency   
-    - {Ssn, Pnumber} → Ename is partially functionally dependent because FD2 = Ssn → Ename.  
+    - {Ssn, Pnumber} → Ename is partially functionally dependent because FD2 = Ssn → Ename and Ssn is only part of the primary key of the relation.  
   
 If a relation schema is not in 2NF, it can be second normalized into a number of 2NF relations in which nonprime attributes are associated only with the part of the primary key on which they are fully functionally dependent. Therefore,the functional dependencies FD1, FD2, and FD3 previously shown, lead to the decomposition of EMP_PROJ into the three relation schemas EP1, EP2, and EP3 as shown below, each of which is in 2NF.  
 
