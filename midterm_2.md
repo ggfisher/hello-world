@@ -68,7 +68,7 @@ _EP3 relation_
   
 ###__Finding the Closure Set of Attributes__  
   
-Being able to find the the closure of a set of attributes is an important step in finding the candidate keys of a relation.  Find the closure of (AB)<sup>+</sup> in the following relation:  
+Being able to find the the closure of a set of attributes is an important step in finding the candidate keys of a relation.  We begin by finding the closure of (AB)<sup>+</sup> in the following relation:  
 
 R(ABCDEF)  
   
