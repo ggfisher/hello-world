@@ -272,4 +272,33 @@ We will try the following - AC, BC, CD and CE:
   
 So we have found two candidate keys __BC__ and __CD__ for the relation.  
   
+__Example 4__  
+  
+Finding the candidate key(s) of the following relation.  
+  
+R(ABCDE)  
+  
+and the following functional dependencies:  
+  
+1) BC-->ADE  
+2) D-->B  
+  
+__Step 1__: We start by looking for attributes that do not appear on the right hand side of any of the functional dependencies.  This implies that it cannot be found through any of the functional dependencies and it is consequently part or potentially singly comprises the candidate key of the relation.  
+  
+By looking at the four functional dependencies, we see that the only attribute that does not appear on the right hand side of any of the FD's is attribute C.  This means that C is either part of or the entire candidate key of the relation.   
+  
+__Step 2__:Now we find the closure of C<sup>+</sup>  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C<sup>+</sup>=C&nbsp;&nbsp;&nbsp;  
+  
+So in this case, we see that attribute __C__ is a part of the candidate key for the relation.  In this instance, we need to find the closure of some composite keys using attribute __C__ to determine the actual candidate key for the relation.  
+  
+We will try the following - AC, BC, CD and CE:  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AC<sup>+</sup>=AC&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BC<sup>+</sup>=ABCDE&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CD<sup>+</sup>=ABCDE&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CE<sup>+</sup>=CE&nbsp;&nbsp;&nbsp;  
+  
+So we have found two candidate keys __BC__ and __CD__ for the relation.  
 
