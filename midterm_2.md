@@ -6,3 +6,7 @@ Superkey
 Prime Attribute  
 Unprime Attribute  
 
+__Topics__
+ Attribute Closure  
+ Finding Candidate Keys  
+ 
