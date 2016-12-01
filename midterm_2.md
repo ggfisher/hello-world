@@ -86,12 +86,8 @@ Given the following functional dependencies:
 - = ABCDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 3  
   
 So (AB)<sup>+</sup> is __ABCDE__  
-
-
   
-
-
-
+###__Canonical Cover of Functional Dependencies__  
 
 
 
