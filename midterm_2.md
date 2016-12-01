@@ -79,11 +79,11 @@ Given the following functional dependencies:
 3) D-->E  
 4) CF-->B  
   
-(AB)<sup>+</sup> 
-- = AB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reflexivity  
-- = ABC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 1  
-- = ABCD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 2  
-- = ABCDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 3  
+Find (AB)<sup>+</sup>  
+&nbsp;&nbsp;= AB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reflexivity  
+&nbsp;&nbsp;= ABC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 1  
+&nbsp;&nbsp;= ABCD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 2  
+&nbsp;&nbsp;= ABCDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given FD 3  
   
 So (AB)<sup>+</sup> is __ABCDE__  
   
