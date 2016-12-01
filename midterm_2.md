@@ -161,7 +161,11 @@ We compare the closure of WZ<sup>+</sup> with the closure of W<sup>+</sup> and Z
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W<sup>+</sup>=W  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z<sup>+</sup>=Z  
   
-So in this example, both right hand attributes of FD 2 are required.  
+So in this example, if W<sup>+</sup> had found the same closure as WZ<sup>+</sup>, then attribute Z would have been redundant.  If  Z<sup>+</sup> had found the same closure as WZ<sup>+</sup>, the attribute W would have been redundant.  But as we see, neither attribute alone was able to find the full closure of WZ<sup>+</sup>, so both left hand attributes of FD 2 are required.  
+  
+
+  
+
   
 
 
