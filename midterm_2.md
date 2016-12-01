@@ -74,10 +74,10 @@ R(ABCDEF)
   
 Given the following functional dependencies:  
 
-1) AB->C  
-2) BC->AD  
-3) D->E  
-4) CF->B  
+1) AB-->C  
+2) BC-->AD  
+3) D-->E  
+4) CF-->B  
   
 (AB)<sup>+</sup> 
 - = AB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reflexivity  
@@ -97,9 +97,9 @@ R(WXYZ)
   
 And the following functional dependencies:  
   
-1) X->W  
-2) WZ->XY  
-3) Y->WXZ  
+1) X-->W  
+2) WZ-->XY  
+3) Y-->WXZ  
 
 __Step 1__: Apply Decomposition Rule:  
   
@@ -109,6 +109,18 @@ This means that you perform the following decomposition:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&beta;   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&gamma;  
   
+So we end up with the following:  
+  
+1) X-->W  
+2) WZ-->X  
+3) WZ-->Y  
+4) Y-->W  
+5) Y-->X  
+5) Y-->Z  
+  
+
+
+
 
 
 
