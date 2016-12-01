@@ -35,7 +35,7 @@ _EMP_PROJ relation_
 |_**Ssn**_|_**Pnumber**_|Hours|Ename|Pname|Plocation|
 |---|---|---|---|---|---|
 
-_EMP_PROJ relation functional dependencies:_
+and the _EMP_PROJ relation functional dependencies_ given below:    
 
 - __FD1__ {Ssn,Pnumber} → Hours
 - __FD2__ Ssn → Ename 
