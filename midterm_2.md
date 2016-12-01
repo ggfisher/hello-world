@@ -9,5 +9,7 @@ Unprime Attribute
 __Topics__
  - __Attribute Closure__  
  - __Finding Candidate Keys__  
+ - __Minimal Cover__  
+ 
  
  
