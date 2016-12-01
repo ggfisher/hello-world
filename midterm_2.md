@@ -163,18 +163,23 @@ We compare the closure of WZ<sup>+</sup> with the closure of W<sup>+</sup> and Z
   
 So in this example, if W<sup>+</sup> had found the same closure as WZ<sup>+</sup>, then attribute Z would have been redundant.  If  Z<sup>+</sup> had found the same closure as WZ<sup>+</sup>, the attribute W would have been redundant.  But as we see, neither attribute alone was able to find the full closure of WZ<sup>+</sup>, so both left hand attributes of FD 2 are required.  
   
-
-  
-
-  
-
-
-
- 
-
-
- 
 ###__Finding Candidate Keys__  
+  
+We begin by finding the candidate key of the following relation:  
+  
+R(ABCD)  
+  
+and the following functional dependencies:  
+  
+1) A-->BCD  
+2) AB-->CD  
+3) ABC-->D  
+4) BD-->AD  
+5) C-->AD  
+  
+
+
+
  
  
  
