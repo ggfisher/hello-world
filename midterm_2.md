@@ -192,7 +192,9 @@ When can you say that a superkey is minimal and consequently is a candidate key?
 For example, ABC and AB are both superkeys.  Since AB is also a superkey, then this means ABC is not minimal and not a candidate key.  
 The same logic can be considered for keys AB and A.  We have already decided that both AB and A are both superkeys.  Since A is also a superkey, this means that AB is not minimal.  Since superkey A does not have any subsets, it alone is the only candidate key for the relation.  
   
-Now consider the last superkey __BD__.  Is it a candidate key?  Also, is there any proper subset of __BD__ that is also a superkey?  The answer is no so __BD__ is also a superkey of the relation.  
+Now consider the last superkey __BD__.  Is it a candidate key?  Also, is there any proper subset of __BD__ that is also a superkey?  The only subsets of __B__ and __D__ and neither of these individual attributes are superkeys.  So the answer is no and so __BD__ is also a superkey of the relation.  
+  
+
   
 
   
