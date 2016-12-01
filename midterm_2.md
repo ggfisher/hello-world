@@ -67,7 +67,7 @@ _EP3 relation_
 |---|---|---|  
 
 __Topics__
- - __Attribute Closure__  
+ - __Finding the Closure Set of Attributes__  
  - __Finding Candidate Keys__  
  - __Minimal Cover__  
  
