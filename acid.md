@@ -10,4 +10,6 @@ __Consistency__ - consistency refers to __*correctness*__.  Any transaction shou
   
 __Isolation__ - ensures that concurrent execution results in a system state that would be obtained if a transaction had been executed serially.  This property is managed by the Concurrency Control Manager.  
   
-__Durability__ - 
+__Durability__ - this property states that changes should be permanent.  The changes must __NOT__ be due to a database failure.  This property is the responsibility of the Recovery Manager.  
+  
+
