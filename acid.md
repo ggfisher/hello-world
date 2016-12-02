@@ -6,4 +6,4 @@ __D__ stands for Durability
   
 __Atomicity__ - this means states that either all operations of a transaction occur on none of the operations occur.  This property is maintained by the Transaction Management Component of the database.  
   
-__Consistency__ - this means that 
+__Consistency__ - consistency refers to __*correctness*__.
