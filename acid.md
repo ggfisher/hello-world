@@ -29,6 +29,6 @@ Consider the following functional dependency:
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&beta;  
   
-Consider the case where both __&alpha;__ and __&beta;__ were both nonprime attributes.  This is showing that a nonprime attribute is functionally dependent on another nonprime attribute.  This type of relation violates 3NF.  
+Consider the case where both __&alpha;__ and __&beta;__ were both nonprime attributes.  This is showing that a nonprime attribute is functionally dependent on another nonprime attribute.  This is a case of transitive dependency and violates 3NF.  
   
 
