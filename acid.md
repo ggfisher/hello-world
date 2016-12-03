@@ -1,5 +1,7 @@
 ##Normalization Forms  
   
+Normalization forms can be identified by examining the functional dependencies in conjunction with the database relations and the concept of prime verses non-prime attributes.  
+   
 __*Prime attribute verses non-prime attribute*__  
 
 An attribute of relation schema R is called a __prime attribute__ of R if it is a member of some candidate key of R. An attribute 
