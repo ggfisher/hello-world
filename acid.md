@@ -13,4 +13,10 @@ __Definition.__ A relation schema R is in 2NF if every nonprime attribute A in R
 
 A functional dependency &alpha;-->&beta; is a __full functional dependency__ if removal of any attribute A from &alpha; means that the dependency does not hold any more. A functional dependency &alpha;-->&beta; is a __partial dependency__ if some attribute A ε &alpha; can be removed from &alpha; and the dependency still holds.  
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&beta;
+Consider the following functional dependency:  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&beta;  
+  
+A partial dependency would exist if __&alpha;__ were prime and __&beta;__ were nonprime and __&beta;__ only depended on part of a candidate key. This type of relation would violate 2NF.  
+  
+
