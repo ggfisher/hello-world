@@ -25,10 +25,13 @@ __Definition.__ A relation schema R is in 3NF if it satisfies 2NF and no nonprim
   
 Third normal form (3NF) is based on the concept of transitive dependency. A functional dependency &alpha;-->&beta; in a relation schema R is a __transitive dependency__ if there exists a set of attributes &beta; in R that is neither a candidate key nor a subset of any key of R, and both &alpha;-->&gamma; and &gamma;-->&beta; hold.  
   
-Consider the following functional dependency:  
+Consider the following functional dependencies:  
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&beta;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&gamma;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gamma;-->&beta;  
   
-Consider the case where both __&alpha;__ and __&beta;__ were both nonprime attributes.  This is showing that a nonprime attribute is functionally dependent on another nonprime attribute.  This is a case of transitive dependency and violates 3NF.  
+In this example, a nonprime attribute &gamma; functionally determines another nonprime attribute &beta;.  This is a case of transitive dependency and is not allowed in 3NF.  
+  
+
   
 
