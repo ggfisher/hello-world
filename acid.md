@@ -11,6 +11,6 @@ __2NF__
   
 __Definition.__ A relation schema R is in 2NF if every nonprime attribute A in R is fully functionally dependent on the primary key of R. 
 
-Second normal form (2NF) is based on the concept of full functional dependency. A functional dependency X → Y is a __full functional dependency__ if removal of any attribute A from X means that the dependency does not hold any more. A functional dependency X→Y is a __partial dependency__ if some attribute A ε X can be removed from X and the dependency still holds.  
+A functional dependency &alpha;-->&beta; is a __full functional dependency__ if removal of any attribute A from &alpha; means that the dependency does not hold any more. A functional dependency &alpha;-->&beta; is a __partial dependency__ if some attribute A ε &alpha can be removed from &alpha; and the dependency still holds.  
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&beta;
