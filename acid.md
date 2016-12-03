@@ -17,7 +17,7 @@ Consider the following functional dependency:
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;-->&beta;  
   
-A partial dependency would exist if __&alpha;__ were prime and __&beta;__ were nonprime and __&beta;__ only depended on part of a candidate key. This type of relation would violate 2NF.  
+A partial dependency would exist if __&alpha;__ were prime, only part of a candidate key and __&beta;__ were nonprime.  Here a nonprime attribute __&beta;__ depends on a part of a candidate key. This type of relation would violate 2NF.  
   
 __3NF__  
   
