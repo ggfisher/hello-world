@@ -21,7 +21,10 @@ A partial dependency would exist if __&alpha;__ were prime, and only part of a c
   
 __3NF__  
   
-__Definition.__ A relation schema R is in 3NF if it satisfies 2NF and no nonprime attribute of R is transitively dependent on the primary key.  
+__Definition.__ A relation schema R is in 3NF if it satisfies 2NF and no nonprime attribute of R is transitively dependent on the primary key.  In addition, a relation schema R is in third normal form (3NF) if, whenever a nontrivial functional dependency &alpha;-->&beta; holds in R, when either:
+
++ a) &alpha; is a superkey of R or
++ b) &beta; is a prime attribute of R. 
   
 Third normal form (3NF) is based on the concept of transitive dependency. A functional dependency &alpha;-->&beta; in a relation schema R is a __transitive dependency__ if there exists a set of attributes &beta; in R that is neither a candidate key nor a subset of any key of R, and both &alpha;-->&gamma; and &gamma;-->&beta; hold.  
   
@@ -31,7 +34,8 @@ Consider the following functional dependencies:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gamma;-->&beta;  
   
 In this example, a nonprime attribute &gamma; functionally determines another nonprime attribute &beta;.  This is a case of transitive dependency and is not allowed in 3NF.  
+   
+__Boyce-Codd Normal Form__  
   
-
-  
+__Definition__ A relation schema R is in BCNF if whenever a nontrivial functional dependency X→A holds in R, then X is a superkey of R. The formal definition of BCNF differs from the definition of 3NF in that condition (b) of 3NF, which allows A to be prime, is absent from BCNF. That makes BCNF a stronger normal form compared to 3NF.    
 
