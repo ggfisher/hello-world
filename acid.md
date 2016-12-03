@@ -19,4 +19,10 @@ Consider the following functional dependency:
   
 A partial dependency would exist if __&alpha;__ were prime and __&beta;__ were nonprime and __&beta;__ only depended on part of a candidate key. This type of relation would violate 2NF.  
   
+__3NF__  
+  
+__Definition.__ A relation schema R is in 3NF if it satisfies 2NF and no nonprime attribute of R is transitively dependent on the primary key.  
+  
+Third normal form (3NF) is based on the concept of transitive dependency. A functional dependency &alpha;-->&beta; in a relation schema R is a __transitive dependency__ if there exists a set of attributes &beta; in R that is neither a candidate key nor a subset of any key of R, and both &alpha;-->&gamma; and &gamma;-->&beta; hold.  
+  
 
