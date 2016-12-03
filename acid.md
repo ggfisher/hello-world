@@ -33,7 +33,7 @@ _LOTS relation functional dependencies:_
 - __FD2__ County_name → Property_id, Lot#, Area, Price, Tax_rate 
 - __FD3__ County_name → Tax_rate
 - __FD4__ Area → Price
-- __FD5__ Area → County_name__  
+- __FD5__ Area → County_name  
   
 Based on the two candidate keys Property_id# and {County_name, Lot#}, the functional dependencies FD1 and FD2 hold. Property_id is chosen as the primary key, but no special consideration will be given to this key over the other candidate key.
 
